@@ -3,10 +3,11 @@ const fs = require('fs')
 
 const spotifyArtists = []
 const songsInKeyOfE = []
-
-// Find most popular artist
 const columnToAnalyze = 'artist(s)_name';
 const columnValues = [];
+const counts = {};
+  let mostCommonValue = null;
+  let maxCount = 0;
 
 function keyOfE(artist) {
   return artist['key'] === 'E'
@@ -35,12 +36,7 @@ fs.createReadStream('spotify-2023.csv')
   })
   .on('end', () => {
 
-  // Define the column to find the most common value in
-  const counts = {};
-  let mostCommonValue = null;
-  let maxCount = 0;
-
-  // Count occurrences of each value in the column
+  
   columnValues.forEach((value) => {
     !counts[value] ? counts[value] = 1 : counts[value]++
 
