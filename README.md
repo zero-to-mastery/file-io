@@ -15,8 +15,9 @@ Table of Contents
 The project consists of a script that reads data from a CSV file (spotify-2023.csv) and performs some or all of the following tasks. **Note: the project must minimally find the number of results (Challenge #1) to qualify for as a submission:**
 
 1. Load Spotify data from the CSV file.
-2. Complete the first challenge below. The other challenges are optional.
-3. Add your project to the submissions folder.
+2. Create a folder for your project with your github handler. 
+3. Complete the first challenge below. The other challenges are optional.
+4. Add your folder with your project to the submissions folder of this repo.
 
 ### Challenges
 1. Write a script to identify the number of songs in the file.
