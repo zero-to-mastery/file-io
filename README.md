@@ -16,6 +16,7 @@ The project consists of a script that reads data from a CSV file (spotify-2023.c
 
 1. Load Spotify data from the CSV file.
 2. Complete the first challenge below. The other challenges are optional.
+3. Add your project to the submissions folder.
 
 ### Challenges
 1. Write a script to identify the number of songs in the file.
