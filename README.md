@@ -5,13 +5,13 @@ Create a data processing file I/O script that reads data from a CSV file contain
 The script an be adapted to work with nearly any backend programming language. This README provides an overview of the project and explains how to adapt it to your chosen programming language.
 
 Table of Contents
-[Project Overview](#overview)
-[Prerequisites](#prerequisites)
-[Usage](#usage)
-[Customization](#customization)
-[License](#license)
+- [Project Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Customization](#customization)
+- [License](#license)
 
-##<a id="overview">Project Overview</a>
+<a id="overview">Project Overview</a>
 The project consists of a script that reads data from a CSV file (spotify-2023.csv) and performs some or all of the following tasks. **Note: the project must minimally find the number of results (Challenge #1) to qualify for as a submission:**
 
 1. Load Spotify data from the CSV file.
@@ -22,14 +22,14 @@ The project consists of a script that reads data from a CSV file (spotify-2023.c
 2. Write a script that identify the number of songs in the key of E.
 3. Count the occurrences of values in a specified column (e.g., artist names) and determine the most common value.
 
-<a id="prerequisites">##Prerequisites</a>
+<a id="prerequisites">Prerequisites</a>
 Before adapting this project to your chosen programming language, ensure that you have the following prerequisites:
 
 - A backend programming language of your choice.
 - A library or method for reading and parsing CSV files, if not built-in to your language of choice.
 - The CSV file (spotify-2023.csv) containing Spotify data that you want to analyze. Make sure to adjust the filename and path as needed.
 
-##<a id="usage">Usage</a>
+<a id="usage">Usage</a>
 The usage instructions will vary depending on your chosen programming language. Below are the general steps to adapt this project:
 
 **Clone or Download:** Clone or download this repository to your local machine.
@@ -46,5 +46,5 @@ The usage instructions will vary depending on your chosen programming language. 
 
 **Run Your Script:** Execute your adapted script using the appropriate command or method for your backend programming language.
 
-##<a id="license">License</a>
+<a id="license">License</a>
 This project is licensed under the MIT License - see the LICENSE file for details. You are free to modify and distribute the adapted code as needed for your own projects.
