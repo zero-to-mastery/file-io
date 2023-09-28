@@ -1,14 +1,17 @@
-const { parse } = require('csv-parse')
+const { parse } = require('csv-parse/.')
 const fs = require('fs')
 
 const spotifyArtists = []
 const songsInKeyOfE = []
-const columnToAnalyze = 'artist(s)_name';
-const columnValues = [];
-const counts = {};
-  let mostCommonValue = null;
-  let maxCount = 0;
 
+// find most popular artist
+const columnToAnalyze = 'artist(s)_name'
+const columnValues = []
+const counts = {}
+let mostCommonValue = null
+let maxCount = 0
+
+// function to find the number of songs in the key of E
 function keyOfE(artist) {
   return artist['key'] === 'E'
 }
