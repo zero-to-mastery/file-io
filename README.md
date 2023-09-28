@@ -7,7 +7,7 @@ The script an be adapted to work with nearly any backend programming language. T
 Table of Contents
 - [Project Overview](#overview)
 - [Prerequisites](#prerequisites)
-- [Usage](#usage)
+- [Getting Started](#getting-started)
 - [Customization](#customization)
 - [License](#license)
 
@@ -31,7 +31,7 @@ Before adapting this project to your chosen programming language, ensure that yo
 - A library or method for reading and parsing CSV files, if not built-in to your language of choice.
 - The CSV file (spotify-2023.csv) containing Spotify data that you want to analyze. Make sure to adjust the filename and path as needed.
 
-<h2 id="usage">Usage</h2>
+<h2 id="getting-started">Getting Started</h2>
 The usage instructions will vary depending on your chosen programming language. Below are the general steps to adapt this project:
 
 **Clone or Download:** Clone or download this repository to your local machine.
