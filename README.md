@@ -4,7 +4,7 @@ Create a data processing file I/O script that reads data from a CSV file contain
 
 The project is flexible enough to work with nearly any backend programming language. This README provides an overview of the project and explains how to adapt it to your chosen programming language.
 
-Table of Contents
+## Table of Contents
 - [Project Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
