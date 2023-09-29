@@ -11,15 +11,15 @@ The project is flexible enough to work with nearly any backend programming langu
 - [License](#license)
 
 <h2 id="overview">Project Overview</h2>
-The project consists of a script that reads data from a CSV file (spotify-2023.csv) and performs some or all of the following tasks. 
-
-**Note: the project must successfully complete one of the challenges below to qualify for as a submission:**
+The project consists of a script that reads data from a CSV file (spotify-2023.csv) and performs the following tasks.
 
 1. Load Spotify data from the CSV file.
 2. Create a folder for your project with your github handler. 
 3. Complete at least one of the challenges below.
 4. Add your folder with your project to the submissions folder of this repo.
 5. Include the script that runs your file.
+
+**Note: the project must successfully complete one of the challenges below to qualify for as a submission.**
 
 ### Challenges
 1. Write a script to identify the number of songs in the file.
