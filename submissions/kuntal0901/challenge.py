@@ -45,7 +45,6 @@ with open('spotify-2023.csv', 'r', newline='', encoding='ISO-8859-1') as file:
             maxCount = count
         else:
             continue
-    print('------------------------------------------------------------------')
 
 
     mostCommonArtists = ','.join(maxCountArtist)[:-1]
