@@ -21,8 +21,6 @@ The project consists of a script that reads data from a CSV file (spotify-2023.c
 
 **Note: the project must successfully complete one of the challenges below to qualify for as a submission.**
 
-**Note: Do not include the CSV file with your submission.**
-
 ### Challenges
 1. Write a script to identify the number of songs in the file.
 2. Write a script that identify the number of songs in the key of E.
