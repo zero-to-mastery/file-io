@@ -8,7 +8,7 @@ object SpotifyAnalysis {
   val KEY_COLUMN         = "key"
 
   def main(args: Array[String]): Unit = {
-    val reader                    = CSVReader.open(new File("./spotify-2023.csv"))
+    val reader                    = CSVReader.open(new File("../../spotify-2023.csv"))
     val lines                     = reader.allWithHeaders()
     val numberOfSongs             = lines.length
     val numberOfSongsInE          = lines.filter(line => line(KEY_COLUMN) == "E").length
