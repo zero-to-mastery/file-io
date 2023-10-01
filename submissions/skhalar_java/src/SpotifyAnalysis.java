@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class SpotifyAnalysis {
     private static final String KEY = "key";
+
     public static void main(String[] args) {
         if (args.length < 1) {
             System.out.println("Pass in file path to csv");
