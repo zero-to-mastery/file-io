@@ -56,3 +56,5 @@ print(
     format(most_streams, ",d"),
     "streams",
 )
+
+# run python analysis.py to see the results
