@@ -1,0 +1,17 @@
+{
+	"name": "file-io",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "./node_modules/.bin/ts-node index.ts"
+	},
+	"keywords": [],
+	"author": "jatanassian",
+	"license": "ISC",
+	"devDependencies": {
+		"ts-node": "^10.9.1",
+		"typescript": "^5.2.2"
+	}
+}
