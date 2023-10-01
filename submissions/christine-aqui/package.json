@@ -1,0 +1,16 @@
+{
+  "name": "christine-aqui",
+  "version": "1.0.0",
+  "description": "My Spotify Data Logger",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Chris Aqui",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
