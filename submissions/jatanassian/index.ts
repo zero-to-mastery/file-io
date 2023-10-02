@@ -3,9 +3,11 @@ import fs = require('fs');
 
 const CSV_FILE_PATH = '../../spotify-2023.csv';
 
-const fileData = fs.readFileSync(CSV_FILE_PATH);
+// ===================================================
+// Interfaces
+// ===================================================
 
-interface Track {
+interface SpotifyTrack {
 	track_name: string;
 	'artist(s)_name': string;
 	artist_count: string;
@@ -32,43 +34,99 @@ interface Track {
 	'speechiness_%': string;
 }
 
-const records: Track[] = parser.parse(fileData, { columns: true });
-console.log(`There are ${records.length} songs in this list.`);
+interface HighestValueForKeyOutput {
+	value: string;
+	count: number;
+}
 
+// ===================================================
+// Functions
+// ===================================================
+
+/**
+ * Read and parse CSV file
+ *
+ * @template T object
+ * @param {string} filePath path to the CSV file
+ * @returns {T[]} list of the specified type
+ */
+const readCsvFile = <T>(filePath: string): T[] => {
+	const fileData = fs.readFileSync(filePath);
+	return parser.parse(fileData, { columns: true });
+};
+
+/**
+ * Counts how many time an array of object has a specific value for the given object's key
+ *
+ * @template T - object
+ * @template K - key of the T object
+ * @param {T[]} list - array of objects of T type
+ * @param {K} key - a property of the T object
+ * @param {T[K]} value
+ * @returns {number}
+ */
 const getCountForValueOfKey = <T, K extends keyof T>(
 	list: T[],
-	columnName: K,
-	columnValue: T[K]
+	key: K,
+	value: T[K]
 ): number => {
 	return list.reduce((count, item) => {
-		return item[columnName] === columnValue ? count + 1 : count;
+		return item[key] === value ? count + 1 : count;
 	}, 0);
 };
 
-const numberOfSongsInhKeyE = getCountForValueOfKey(records, 'key', 'E');
-console.log(`There are ${numberOfSongsInhKeyE} songs in the key of E.`);
-
-const highestValueForKey = (
-	list: Track[],
-	key: keyof Track
-): { value: string; count: number } => {
-	const listCount = list.reduce<{ [key: string]: number }>((acc, item) => {
-		acc[item[key]] ? acc[item[key]]++ : (acc[item[key]] = 1);
+/**
+ * For a given property/key, return the most common value and its count
+ *
+ * @template T - object
+ * @param {T[]} list - array of objects
+ * @param {keyof T} key - one of the object's property
+ * @returns
+ */
+const highestValueForKey = <T>(
+	list: T[],
+	key: keyof T
+): HighestValueForKeyOutput => {
+	// Count how many times each value appears
+	const listCount = list.reduce<{ [field: string]: number }>((acc, item) => {
+		const value = String(item[key]);
+		acc[value] ? acc[value]++ : (acc[value] = 1);
 
 		return acc;
 	}, {});
 
-	return Object.keys(listCount).reduce<{ value: string; count: number }>(
+	// Return the value with the highest count
+	return Object.keys(listCount).reduce<HighestValueForKeyOutput>(
 		(currentHighest, key) => {
 			return currentHighest.count && currentHighest.count > listCount[key]
 				? currentHighest
 				: { value: key, count: listCount[key] };
 		},
-		{} as { value: string; count: number }
+		{} as HighestValueForKeyOutput
 	);
 };
 
-const mostPopularArtist = highestValueForKey(records, 'artist(s)_name');
+// ===================================================
+// Flow
+// ===================================================
+
+// Challenge #1
+const records = readCsvFile<SpotifyTrack>(CSV_FILE_PATH);
+console.log(`There are ${records.length} songs in this list.`);
+
+// Challenge #2
+const numberOfSongsInKeyE = getCountForValueOfKey<SpotifyTrack, 'key'>(
+	records,
+	'key',
+	'E'
+);
+console.log(`There are ${numberOfSongsInKeyE} songs in the key of E.`);
+
+// Challenge #3
+const mostPopularArtist = highestValueForKey<SpotifyTrack>(
+	records,
+	'artist(s)_name'
+);
 console.log(
 	`The most popular artist is ${mostPopularArtist.value} with ${mostPopularArtist.count} songs.`
 );
