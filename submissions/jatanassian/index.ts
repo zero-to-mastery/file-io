@@ -30,7 +30,20 @@ interface Track {
 	'instrumentalness_%': string;
 	'liveness_%': string;
 	'speechiness_%': string;
-};
+}
 
 const records: Track[] = parser.parse(fileData, { columns: true });
 console.log(`This file contains ${records.length} songs.`);
+
+const getCountForValueOfKey = <T, K extends keyof T>(
+	list: T[],
+	columnName: K,
+	columnValue: T[K]
+): number => {
+	return list.reduce((count, item) => {
+		return item[columnName] === columnValue ? count + 1 : count;
+	}, 0);
+};
+
+const numberOfSongsInhKeyE = getCountForValueOfKey(records, 'key', 'E');
+console.log(`There are ${numberOfSongsInhKeyE} songs in the key of E.`);
