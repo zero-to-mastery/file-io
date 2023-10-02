@@ -2,6 +2,7 @@
 // Submission: Hacktoberfest
 
 // Main Menu (Console Menu)
+// To use this properly, simply run "node index.js" in the console to start the program.
 const mainMenu = () => {
     const readline = require('readline').createInterface({
         input: process.stdin,
