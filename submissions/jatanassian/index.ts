@@ -33,7 +33,7 @@ interface Track {
 }
 
 const records: Track[] = parser.parse(fileData, { columns: true });
-console.log(`This file contains ${records.length} songs.`);
+console.log(`There are ${records.length} songs in this list.`);
 
 const getCountForValueOfKey = <T, K extends keyof T>(
 	list: T[],
@@ -47,3 +47,28 @@ const getCountForValueOfKey = <T, K extends keyof T>(
 
 const numberOfSongsInhKeyE = getCountForValueOfKey(records, 'key', 'E');
 console.log(`There are ${numberOfSongsInhKeyE} songs in the key of E.`);
+
+const highestValueForKey = (
+	list: Track[],
+	key: keyof Track
+): { value: string; count: number } => {
+	const listCount = list.reduce<{ [key: string]: number }>((acc, item) => {
+		acc[item[key]] ? acc[item[key]]++ : (acc[item[key]] = 1);
+
+		return acc;
+	}, {});
+
+	return Object.keys(listCount).reduce<{ value: string; count: number }>(
+		(currentHighest, key) => {
+			return currentHighest.count && currentHighest.count > listCount[key]
+				? currentHighest
+				: { value: key, count: listCount[key] };
+		},
+		{} as { value: string; count: number }
+	);
+};
+
+const mostPopularArtist = highestValueForKey(records, 'artist(s)_name');
+console.log(
+	`The most popular artist is ${mostPopularArtist.value} with ${mostPopularArtist.count} songs.`
+);
