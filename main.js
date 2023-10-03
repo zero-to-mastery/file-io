@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { parse } = require('csv-parse/sync');
+const chalk = require('chalk');
 const {
 	getNumberOfSongs,
 	getNumberOfSongsInKey,
@@ -19,18 +20,23 @@ const artistWithMostSongs = getMostPopularArtist(
 	COUNT_COLUMN
 );
 
+const highlight = (str) => chalk.bold.bgYellow(str);
+
 function main() {
 	console.log(
-		`Total number of songs: ${getNumberOfSongs(spotifyData)}`
-	);
-	console.log(
-		`Number of songs in key of ${KEY}: ${getNumberOfSongsInKey(
-			spotifyData,
-			KEY
+		`Total number of songs: ${highlight(
+			getNumberOfSongs(spotifyData)
 		)}`
 	);
 	console.log(
-		`The most popular artist is ${artistWithMostSongs.artist} with ${artistWithMostSongs.songs} songs.`
+		`Number of songs in key of ${KEY}: ${highlight(
+			getNumberOfSongsInKey(spotifyData, KEY)
+		)}`
+	);
+	console.log(
+		`The most popular artist is ${highlight(
+			artistWithMostSongs.artist
+		)} with ${highlight(artistWithMostSongs.songs)} songs.`
 	);
 }
 
