@@ -1,6 +1,6 @@
 # ZTM 2023 Hacktoberfest
-# Solution for the first challenge of File/IO
-# Find the number of songs in the file
+# Solution for the second challenge of File/IO
+# Find the number of songs in the key of E
 
 # Imports
 import pandas as pd
@@ -14,19 +14,18 @@ def main():
     # Read CSV data into a Pandas DataFrame
     spotify_data = pd.read_csv(csv_to_read)
     
-    # Grab the DataSeries from the column track_name
-    songs = spotify_data["track_name"]
+    # Drop NaN values
+    spotify_data = spotify_data.dropna()
     
-    # Drop NaN values from the column in case there are any
-    songs = songs.dropna()
+    # Grab songs that have E as their key
+    e_key_songs = spotify_data[spotify_data["key"] == "E"]
     
-    # Grab the number of songs by getting the length of the songs DataSeries
-    num_songs = len(songs)
+    # Grab the length of the Pandas DateFrame of songs in key of E
+    num_e_key_songs = e_key_songs.shape[0]
     
-    # Show the number of songs to the user
-    print(f"The file {csv_to_read} contains {num_songs} songs.")
+    # Show it to the user
+    print(f"In {csv_to_read} there are {num_e_key_songs} songs in key of E.")
     
-
 if __name__ == "__main__":
     """Only run if the code was not imported."""
     main()
