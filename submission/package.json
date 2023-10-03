@@ -1,14 +1,19 @@
 {
-  "name": "file-io",
+  "name": "submission",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
+    "format": "prettier --write index.js",
+    "prettier:fix": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
   "dependencies": {
     "csv-parse": "^5.5.0"
   }
