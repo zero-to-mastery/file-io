@@ -6,7 +6,7 @@ defmodule DataLogger do
   def output_the_results do
     {artist_name, songs_count} = get_most_common_artist()
 
-    IO.inspect("Total Songs >> #{get_rows()}")
+    IO.puts("Total Songs >> #{get_rows()}")
     IO.puts("Total songs in key E >> #{get_songs_in_key_E()}")
     IO.puts("The most common artist is >> #{artist_name} << with the most songs >> #{songs_count}")
   end
