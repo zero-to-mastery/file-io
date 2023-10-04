@@ -17,3 +17,6 @@ mix deps.get
    ```elixir
    DataLogger.output_the_results
    ```
+The results:
+
+![image](https://github.com/maxie7/file-io/assets/15796607/da27f80b-fa38-4fa1-aca6-30d08053c9a3)
