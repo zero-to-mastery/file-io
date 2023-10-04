@@ -1,0 +1,21 @@
+/* Import and use the Inter font https://rsms.me/inter/ */
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 2em;
+  font-family: "Inter var", sans-serif;
+  font-size: 16px;
+  color: hsl(210deg 29% 29%);
+  background: hsl(210deg 17% 98%);
+}
+
+.top-count {
+  background-color: cornflowerblue;
+  color: white;
+}
