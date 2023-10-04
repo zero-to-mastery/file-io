@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'csv'
-require 'pry'
 ### Challenges
 # 1. Write a script to identify the number of songs in the file. DONE
 # 2. Write a script that identify the number of songs in the key of E. DONE
