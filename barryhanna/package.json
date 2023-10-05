@@ -4,6 +4,7 @@
   "description": "Create a data processing file I/O script that reads data from a CSV file containing Spotify data and performs some analysis to complete one or more of the challenges outlined bdlow.",
   "main": "main.js",
   "scripts": {
+    "main": "node main.js",
     "test": "jest"
   },
   "repository": {
