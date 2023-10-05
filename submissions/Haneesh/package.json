@@ -1,0 +1,20 @@
+{
+  "name": "haneesh",
+  "version": "1.0.0",
+  "description": "A solution to File IO's challenge (README.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo Test"
+  },
+  "keywords": [
+    "hacktoberfest",
+    "file-io",
+    "challenge",
+    "file-io-solution"
+  ],
+  "author": "Haneesh",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.5.0"
+  }
+}
