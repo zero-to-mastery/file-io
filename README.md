@@ -18,6 +18,7 @@ The project consists of a script that reads data from a CSV file (spotify-2023.c
 3. Complete at least one of the challenges below.
 4. Add your folder with your project to the submissions folder of this repo.
 5. Include the script that runs your file.
+6. Include instructions on how to install any dependencies.
 
 **Note: the project must successfully complete one of the challenges below to qualify for as a submission.**
 
