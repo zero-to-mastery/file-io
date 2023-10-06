@@ -135,7 +135,6 @@ build
 # database
 db/*.db
 prisma/*.db
-data/
 
 # temp
 tmp/
