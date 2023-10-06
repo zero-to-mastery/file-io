@@ -105,7 +105,7 @@ async function loadData() {
         console.log(`There are ${songs.length} songs in the file`);
         console.log(`There are ${songsKeyE} songs in the file with key of E`);
         console.log(
-          `The artist ${maxArtistName} is the famous with ${maxArtistCount} songs`
+          `The artist ${maxArtistName} is the most famous with ${maxArtistCount} songs`
         );
       }
     );
