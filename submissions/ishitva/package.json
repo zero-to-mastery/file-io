@@ -9,6 +9,6 @@
   "author": "ishitva",
   "license": "ISC",
   "dependencies": {
-    "csv-parse": "^5.5.0"
+    "csv-parse": "^5.5.1"
   }
 }
