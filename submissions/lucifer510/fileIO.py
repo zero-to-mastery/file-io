@@ -31,3 +31,5 @@ print(f"Occurrences of values in '{column_to_count}':")
 print(value_counts)
 print(
     f"The most common value in '{column_to_count}' is '{most_common_value}' with {value_counts.max()} occurrences.")
+
+
