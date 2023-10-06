@@ -1,6 +1,6 @@
 # Create a Spotify Data Logger 
 
-Create a data processing file I/O script that reads data from a CSV file containing Spotify data and performs some analysis to complete one or more of the challenges outlined below. 
+Create a data processing file I/O script that reads data from a CSV file containing Spotify data and performs some analysis to complete one or more of the challenges outlined bdlow. 
 
 The project is flexible enough to work with nearly any backend programming language. This README provides an overview of the project and explains how to adapt it to your chosen programming language.
 
