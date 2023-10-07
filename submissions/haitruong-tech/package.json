@@ -1,0 +1,19 @@
+{
+  "name": "haitruong-tech",
+  "version": "1.0.0",
+  "description": "ZTM file-io hacktoberfest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "hacktoberfest",
+    "file-io",
+    "ZTM"
+  ],
+  "author": "Hai Truong",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
