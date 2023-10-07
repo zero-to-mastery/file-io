@@ -1,0 +1,28 @@
+{
+  "name": "file-io",
+  "version": "1.0.0",
+  "description": "Create a data processing file I/O script that reads data from a CSV file containing Spotify data and performs some analysis to complete one or more of the challenges outlined below.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorTT/file-io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorTT/file-io/issues"
+  },
+  "homepage": "https://github.com/igorTT/file-io#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+
