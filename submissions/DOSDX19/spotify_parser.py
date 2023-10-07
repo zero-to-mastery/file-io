@@ -30,7 +30,9 @@ def count_songs(column):
     100
     """
     
+    #remove the duplication to insure the right number of the song
     number_of_song = column.value_counts().count()
+    #return the number of songs without duplication
     return number_of_song
     
 
