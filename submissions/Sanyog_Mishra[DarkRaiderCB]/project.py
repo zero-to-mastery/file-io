@@ -1,5 +1,5 @@
-#HACKTOBERFEST-2023
-#Python Code for FILE I/O CHALLENGE 1
+# HACKTOBERFEST-2023
+# Python Code for FILE I/O CHALLENGE 1
 
 import csv  #Using csv module
 with open("spotify-2023.csv","r") as song_file:
@@ -9,3 +9,5 @@ with open("spotify-2023.csv","r") as song_file:
     for line in read_data:  
         ctr=ctr+1
     print(f"The total number of songs in spotify-2023.csv are: {ctr}")
+
+
