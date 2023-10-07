@@ -54,15 +54,14 @@ class Challenge:
         return self
 
     def result(self):
-
-        for f in self._functions:                                    # Initialise State
+        for f in self._functions:  # Initialise State
             self.__state[id(f)] = f(0, None)
 
-        for ent in self._data:                                       # Process Data
+        for ent in self._data:  # Process Data
             for f in self._functions:
                 self.__state[id(f)] = f(ent, self.__state[id(f)])
 
-        for f in self._functions:                                    # finalise output
+        for f in self._functions:  # finalise output
             self._result += (f._finalise(self.__state[id(f)]),)
 
         return self._result
@@ -72,32 +71,40 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         err("Usage: ", sys.argv[0], " {file path}")
 
-    if not (os.path.isfile(sys.argv[1]) and sys.argv[1].endswith("csv")):
-        err("Provide a valid CSV file with .csv extension")
+    path = sys.argv[1]
+    if not (path.endswith(".csv") and os.path.isfile(path)):
+        print(
+            "Warning: provided file path is invalid\n"
+            "Picking CSV file from script's parent directory...",
+            file=sys.stderr,
+        )
+        path = "./spotify-2023.csv"
 
     try:
-        data = load_csv(sys.argv[1])
+        data = load_csv(path)
         songn, mcelem, mcelem_by_track, songk, songk_by_D = (
             Challenge(data)
             .song_count()
-            .song_count_by_key()                                             # default: E
+            .song_count_by_key()  # default: E
             .song_count_by_key("D")
-            .most_common_element_by_column()                                 # default: BPM
+            .most_common_element_by_column()  # default: BPM
             .most_common_element_by_column("track_name")
             .result()
         )
 
-        print(f"""
-        Total Songs found in data: {songn}
+        print(
+            f"""
+Total Songs found in data: {songn}
 
-        Total Songs by key "E": {songk}
+Total Songs by key "E": {songk}
 
-        Total Songs by key "D": {songk_by_D}
+Total Songs by key "D": {songk_by_D}
 
-        Most Common Element by Col "bpm": {mcelem}
+Most Common Element by Col "bpm": {mcelem}
 
-        Most Common Element by Col "track_name": {mcelem_by_track}
-        """)
+Most Common Element by Col "track_name": {mcelem_by_track}
+        """
+        )
         sys.exit(0)
 
     except Exception as e:
