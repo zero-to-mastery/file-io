@@ -1,0 +1,52 @@
+# Python-related
+__pycache__/
+*.pyc
+*.pyo
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+*.egg-info
+*.egg-info/
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Editor-specific
+.vscode/
+.idea/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# Compiled binary extensions
+*.dll
+*.dylib
+*.so
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/

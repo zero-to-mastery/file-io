@@ -1,0 +1,14 @@
+{
+  "name": "file-io",
+  "version": "1.0.0",
+  "description": "Read a spotify csv file and do various tasks.",
+  "main": "run.js",
+  "scripts": {
+    "test": "node run.js"
+  },
+  "author": "Jana Pyrek",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
