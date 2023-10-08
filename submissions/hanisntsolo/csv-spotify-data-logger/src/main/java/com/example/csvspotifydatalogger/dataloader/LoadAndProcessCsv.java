@@ -32,7 +32,7 @@ public class LoadAndProcessCsv {
     String password;
     @Value("${spring.datasource.driverClassName}")
     String driver;
-    @Value("${path.to.csv}")
+    @Value("${path.to.csv}") /* You need to change the file path based on your system */
     String pathToCsv = "E:\\.code\\file-io\\submissions\\hanisntsolo\\csv-spotify-data-logger\\src\\main\\resources\\spotify-2023.csv";
 
     @Autowired
