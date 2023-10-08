@@ -1,10 +1,7 @@
 
 const fs = require('fs');
 const Papa = require('papaparse');
-
-
 const csvFile = fs.readFileSync('./spotify-2023.csv', 'utf8');
-
 
 Papa.parse(csvFile, {
     header: true,
