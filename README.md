@@ -14,7 +14,7 @@ The project is flexible enough to work with nearly any backend programming langu
 The project consists of a script that reads data from a CSV file (spotify-2023.csv) and performs the following tasks.
 
 1. Load Spotify data from the CSV file.
-2. Create a folder for your project with your github handler. 
+2. Create a folder for your project with your github handle. 
 3. Complete at least one of the challenges below.
 4. Add your folder with your project to the submissions folder of this repo.
 5. Include the script that runs your file.
