@@ -1,0 +1,3 @@
+The code aims to solve Challenge 3 ie. Counting the occurrences of values in a specified column (here: artist names) and determine the most common value.
+Code written in Python 3.
+Use of csv module to solve the Challenge.

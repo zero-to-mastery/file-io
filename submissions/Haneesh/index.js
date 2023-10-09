@@ -1,7 +1,7 @@
 const fs = require("fs");
 const parse = require("csv-parse").parse;
 
-const csvPath = "../../spotify-2023.csv"; // I used the one in the GitHub Repo
+const csvPath = "./spotify-2023.csv"; // I used the one in the GitHub Repo
 
 const songs = [];
 const authors = {};
