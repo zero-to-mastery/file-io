@@ -1,0 +1,61 @@
+#!/usr/bin/env ruby
+
+require 'csv'
+### Challenges
+# 1. Write a script to identify the number of songs in the file. DONE
+# 2. Write a script that identify the number of songs in the key of E. DONE
+# 3. TODO: Count the occurrences of values in a specified column (e.g., artist names) and determine the most common value.
+
+class SpotifyStats
+  SPOTIFY_CSV_PATH = '../../spotify-2023.csv'.freeze
+
+  attr_reader :songs,
+              :song_count,
+              :headers,
+              :songs_in_key_e
+
+  def initialize(file_path = SPOTIFY_CSV_PATH)
+    @songs          = []
+    @song_count     = 0
+    @songs_in_key_e = 0
+
+    load_data(file_path)
+  end
+
+  def most_common(column)
+    raise ArgumentError, 'column is not in list of headers' if headers.find { |c| c == column }.nil?
+
+    frequency_in_column = {}
+    songs.each do |song|
+      frequency_in_column[song[column]] = (frequency_in_column[song[column]] || 0) + 1
+    end
+
+    puts frequency_in_column
+  end
+
+  private
+
+  def load_data(file_path)
+    File.open(file_path) do |file|
+      CSV.foreach(file, headers: true, encoding: 'ISO-8859-1') do |row|
+        @headers ||= row.headers
+        @songs << row
+        @song_count += 1
+        @songs_in_key_e += 1 if row['key'] == 'E'
+      end
+    end
+  end
+end
+
+stats = SpotifyStats.new
+
+# Challenges 1 and 2 automatically
+puts "Challenge 1: Total songs found: #{stats.song_count}"
+puts "Challenge 2: Songs in key \'E\': #{stats.songs_in_key_e}"
+
+# For checking most common, we additionally pass an argument of the csv header column value see the readme for usage
+return if ARGV.empty?
+
+# constraint: only takes the first argument passed when executing the script
+column = ARGV.shift
+stats.most_common(column)
