@@ -100,7 +100,7 @@ const maxColumnValue = (
   uniqueColValuesArray: ValuesArrayType[]
 } => {
   const uniqueColValuesArray: ValuesArrayType[] = []
-  if (!data.length) {
+  if (!data.length || !data[0][column]) {
     return {
       column,
       maxColValueArray: [],
@@ -176,11 +176,10 @@ const reportColValueCount = (col: string): void => {
   const { column, uniqueColValuesArray, maxColValueArray } = tracks
     ? maxColumnValue(col, tracks)
     : { column: col, uniqueColValuesArray: [], maxColValueArray: [] }
-  console.log(`Unique values of column name, ${column} ${uniqueColValuesArray.length}:`)
-  console.log(uniqueColValuesArray)
   if (uniqueColValuesArray.length <= 0) {
-    console.log(`The column name ${column} does not exist`)
+    console.log(`The column name, ${column}, does not exist.  Try again.`)
   } else {
+    console.log(`Unique values of column name, ${column}:`)
     for (let row of uniqueColValuesArray) {
       console.log(`Value, ${row.value}, occurs ${row.count} times.`)
     }
@@ -192,4 +191,4 @@ const reportColValueCount = (col: string): void => {
   }
 }
 
-reportColValueCount('1%')
+reportColValueCount('speechiness_%')
