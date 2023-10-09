@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.csvspotifydatalogger.CsvSpotifyDataLoggerApplicationTests" time="8.665" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\.code\file-io\submissions\hanisntsolo\csv-spotify-data-logger\target\test-classes;E:\.code\file-io\submissions\hanisntsolo\csv-spotify-data-logger\target\classes;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.4\spring-boot-starter-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot\3.1.4\spring-boot-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-context\6.0.12\spring-context-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.4\spring-boot-autoconfigure-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.4\spring-boot-starter-logging-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\hanisntsolo-boxx\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-core\6.0.12\spring-core-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-jcl\6.0.12\spring-jcl-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.4\spring-boot-starter-web-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.4\spring-boot-starter-json-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.2\jackson-module-parameter-names-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.4\spring-boot-starter-tomcat-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.13\tomcat-embed-core-10.1.13.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.13\tomcat-embed-el-10.1.13.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.13\tomcat-embed-websocket-10.1.13.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-web\6.0.12\spring-web-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-beans\6.0.12\spring-beans-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\io\micrometer\micrometer-observation\1.11.4\micrometer-observation-1.11.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\io\micrometer\micrometer-commons\1.11.4\micrometer-commons-1.11.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-webmvc\6.0.12\spring-webmvc-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-aop\6.0.12\spring-aop-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-expression\6.0.12\spring-expression-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.4\spring-boot-starter-test-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-test\3.1.4\spring-boot-test-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.4\spring-boot-test-autoconfigure-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\net\minidev\json-smart\2.4.11\json-smart-2.4.11.jar;C:\Users\hanisntsolo-boxx\.m2\repository\net\minidev\accessors-smart\2.4.11\accessors-smart-2.4.11.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-test\6.0.12\spring-test-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.1.4\spring-boot-starter-data-jpa-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.4\spring-boot-starter-aop-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\aspectj\aspectjweaver\1.9.20\aspectjweaver-1.9.20.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.4\spring-boot-starter-jdbc-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-jdbc\6.0.12\spring-jdbc-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\hibernate\orm\hibernate-core\6.2.9.Final\hibernate-core-6.2.9.Final.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\hanisntsolo-boxx\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.3\jaxb-runtime-4.0.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.3\jaxb-core-4.0.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\glassfish\jaxb\txw2\4.0.3\txw2-4.0.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\data\spring-data-jpa\3.1.4\spring-data-jpa-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\data\spring-data-commons\3.1.4\spring-data-commons-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-orm\6.0.12\spring-orm-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-tx\6.0.12\spring-tx-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-aspects\6.0.12\spring-aspects-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\hanisntsolo-boxx\.jdks\openjdk-18.0.1.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\hanisntsolo-boxx\AppData\Local\Temp\surefire6104878848571441166\surefirebooter-20231008103058412_3.jar C:\Users\hanisntsolo-boxx\AppData\Local\Temp\surefire6104878848571441166 2023-10-08T10-30-57_735-jvmRun1 surefire-20231008103058412_1tmp surefire_0-20231008103058412_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\.code\file-io\submissions\hanisntsolo\csv-spotify-data-logger\target\test-classes;E:\.code\file-io\submissions\hanisntsolo\csv-spotify-data-logger\target\classes;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.4\spring-boot-starter-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot\3.1.4\spring-boot-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-context\6.0.12\spring-context-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.4\spring-boot-autoconfigure-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.4\spring-boot-starter-logging-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\hanisntsolo-boxx\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-core\6.0.12\spring-core-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-jcl\6.0.12\spring-jcl-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.4\spring-boot-starter-web-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.4\spring-boot-starter-json-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.2\jackson-module-parameter-names-2.15.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.4\spring-boot-starter-tomcat-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.13\tomcat-embed-core-10.1.13.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.13\tomcat-embed-el-10.1.13.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.13\tomcat-embed-websocket-10.1.13.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-web\6.0.12\spring-web-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-beans\6.0.12\spring-beans-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\io\micrometer\micrometer-observation\1.11.4\micrometer-observation-1.11.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\io\micrometer\micrometer-commons\1.11.4\micrometer-commons-1.11.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-webmvc\6.0.12\spring-webmvc-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-aop\6.0.12\spring-aop-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-expression\6.0.12\spring-expression-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.4\spring-boot-starter-test-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-test\3.1.4\spring-boot-test-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.4\spring-boot-test-autoconfigure-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\net\minidev\json-smart\2.4.11\json-smart-2.4.11.jar;C:\Users\hanisntsolo-boxx\.m2\repository\net\minidev\accessors-smart\2.4.11\accessors-smart-2.4.11.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-test\6.0.12\spring-test-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.1.4\spring-boot-starter-data-jpa-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.4\spring-boot-starter-aop-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\aspectj\aspectjweaver\1.9.20\aspectjweaver-1.9.20.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.4\spring-boot-starter-jdbc-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-jdbc\6.0.12\spring-jdbc-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\hibernate\orm\hibernate-core\6.2.9.Final\hibernate-core-6.2.9.Final.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\hanisntsolo-boxx\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.3\jaxb-runtime-4.0.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.3\jaxb-core-4.0.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\glassfish\jaxb\txw2\4.0.3\txw2-4.0.3.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\hanisntsolo-boxx\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\data\spring-data-jpa\3.1.4\spring-data-jpa-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\data\spring-data-commons\3.1.4\spring-data-commons-3.1.4.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-orm\6.0.12\spring-orm-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-tx\6.0.12\spring-tx-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\org\springframework\spring-aspects\6.0.12\spring-aspects-6.0.12.jar;C:\Users\hanisntsolo-boxx\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\hanisntsolo-boxx"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="C:\Users\hanisntsolo-boxx\.jdks\openjdk-18.0.1.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\.code\file-io\submissions\hanisntsolo\csv-spotify-data-logger"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\hanisntsolo-boxx\AppData\Local\Temp\surefire6104878848571441166\surefirebooter-20231008103058412_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.1.1+2-6"/>
+    <property name="user.name" value="hanisntsolo-boxx"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\hanisntsolo-boxx\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\hanisntsolo-boxx\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.1.3"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="user.dir" value="E:\.code\file-io\submissions\hanisntsolo\csv-spotify-data-logger"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="8500"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\hanisntsolo-boxx\.jdks\openjdk-18.0.1.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Amazon Corretto\jdk17.0.7_7\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\hanisntsolo-boxx\AppData\Local\Microsoft\WindowsApps;C:\Users\hanisntsolo-boxx\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hanisntsolo-boxx\AppData\Roaming\npm;C:\Users\hanisntsolo-boxx\AppData\Local\atom\bin;C:\adb;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Python34;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\ADB\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.1.1+2-6"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="contextLoads" classname="com.example.csvspotifydatalogger.CsvSpotifyDataLoggerApplicationTests" time="0.954">
+    <system-out><![CDATA[10:31:00.200 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.csvspotifydatalogger.CsvSpotifyDataLoggerApplicationTests]: CsvSpotifyDataLoggerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:31:00.347 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.csvspotifydatalogger.CsvSpotifyDataLoggerApplication for test class com.example.csvspotifydatalogger.CsvSpotifyDataLoggerApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-08T10:31:00.938+05:30  INFO 8500 --- [           main] e.c.CsvSpotifyDataLoggerApplicationTests : Starting CsvSpotifyDataLoggerApplicationTests using Java 18.0.1.1 with PID 8500 (started by hanisntsolo-boxx in E:\.code\file-io\submissions\hanisntsolo\csv-spotify-data-logger)
+2023-10-08T10:31:00.943+05:30  INFO 8500 --- [           main] e.c.CsvSpotifyDataLoggerApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-10-08T10:31:01.863+05:30  INFO 8500 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-08T10:31:01.961+05:30  INFO 8500 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2023-10-08T10:31:02.641+05:30  INFO 8500 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-08T10:31:02.933+05:30  INFO 8500 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:spotifytable user=SA
+2023-10-08T10:31:02.933+05:30  INFO 8500 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-08T10:31:03.015+05:30  INFO 8500 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-08T10:31:03.110+05:30  INFO 8500 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-08T10:31:03.110+05:30  INFO 8500 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-08T10:31:03.436+05:30  INFO 8500 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-08T10:31:03.623+05:30  INFO 8500 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-08T10:31:03.922+05:30  INFO 8500 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-08T10:31:04.730+05:30  INFO 8500 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-08T10:31:04.776+05:30  INFO 8500 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-08T10:31:05.247+05:30  INFO 8500 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-08T10:31:06.588+05:30  WARN 8500 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-08T10:31:07.012+05:30  INFO 8500 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:spotifytable'
+2023-10-08T10:31:07.077+05:30  INFO 8500 --- [           main] e.c.CsvSpotifyDataLoggerApplicationTests : Started CsvSpotifyDataLoggerApplicationTests in 6.517 seconds (process running for 8.472)
+ID: 1 Track Name: track_name Artist Name: artist(s)_name 
+ID: 2 Track Name: Seven (feat. Latto) (Explicit Ver.) Artist Name: "Latto 
+ID: 3 Track Name: LALA Artist Name: Myke Towers 
+ID: 4 Track Name: vampire Artist Name: Olivia Rodrigo 
+ID: 5 Track Name: Cruel Summer Artist Name: Taylor Swift 
+ID: 6 Track Name: WHERE SHE GOES Artist Name: Bad Bunny 
+ID: 7 Track Name: Sprinter Artist Name: "Dave 
+ID: 8 Track Name: Ella Baila Sola Artist Name: "Eslabon Armado 
+ID: 9 Track Name: Columbia Artist Name: Quevedo 
+ID: 10 Track Name: fukumean Artist Name: Gunna 
+ID: 11 Track Name: La Bebe - Remix Artist Name: "Peso Pluma 
+ID: 12 Track Name: un x100to Artist Name: "Bad Bunny 
+ID: 13 Track Name: Super Shy Artist Name: NewJeans 
+ID: 14 Track Name: Flowers Artist Name: Miley Cyrus 
+ID: 15 Track Name: Daylight Artist Name: David Kushner 
+ID: 16 Track Name: As It Was Artist Name: Harry Styles 
+ID: 17 Track Name: Kill Bill Artist Name: SZA 
+ID: 18 Track Name: Cupid - Twin Ver. Artist Name: Fifty Fifty 
+ID: 19 Track Name: "What Was I Made For? [From The Motion Picture ""Barbie""]" Artist Name: Billie Eilish 
+ID: 20 Track Name: Classy 101 Artist Name: "Feid 
+ID: 21 Track Name: Like Crazy Artist Name: Jimin 
+ID: 22 Track Name: LADY GAGA Artist Name: "Gabito Ballesteros 
+ID: 23 Track Name: I Can See You (Taylor���s Version) (From The  Artist Name: Taylor Swift 
+ID: 24 Track Name: I Wanna Be Yours Artist Name: Arctic Monkeys 
+ID: 25 Track Name: "Peso Pluma: Bzrp Music Sessions Artist Name:  Vol. 55" 
+ID: 26 Track Name: Popular (with Playboi Carti & Madonna) - The Idol Vol. 1 (Music from the HBO Original Series) Artist Name: "The Weeknd 
+ID: 27 Track Name: SABOR FRESA Artist Name: Fuerza Regida 
+ID: 28 Track Name: Calm Down (with Selena Gomez) Artist Name: "R��ma 
+ID: 29 Track Name: MOJABI GHOST Artist Name: "Tainy 
+ID: 30 Track Name: Last Night Artist Name: Morgan Wallen 
+ID: 31 Track Name: Dance The Night (From Barbie The Album) Artist Name: Dua Lipa 
+ID: 32 Track Name: Rush Artist Name: Troye Sivan 
+ID: 33 Track Name: TULUM Artist Name: "Peso Pluma 
+ID: 34 Track Name: Creepin' Artist Name: "The Weeknd 
+ID: 35 Track Name: Anti-Hero Artist Name: Taylor Swift 
+ID: 36 Track Name: TQG Artist Name: "Karol G 
+ID: 37 Track Name: Los del Espacio Artist Name: "Big One 
+ID: 38 Track Name: Fr��gil (feat. Grupo Front Artist Name: "Yahritza Y Su Esencia 
+ID: 39 Track Name: Blank Space Artist Name: Taylor Swift 
+ID: 40 Track Name: Style Artist Name: Taylor Swift 
+ID: 41 Track Name: TQM Artist Name: Fuerza Regida 
+ID: 42 Track Name: El Azul Artist Name: "Junior H 
+ID: 43 Track Name: Sunflower - Spider-Man: Into the Spider-Verse Artist Name: "Post Malone 
+ID: 44 Track Name: I'm Good (Blue) Artist Name: "Bebe Rexha 
+ID: 45 Track Name: See You Again Artist Name: "Tyler 
+ID: 46 Track Name: Barbie World (with Aqua) [From Barbie The Album] Artist Name: "Nicki Minaj 
+ID: 47 Track Name: Angels Like You Artist Name: Miley Cyrus 
+ID: 48 Track Name: I Ain't Worried Artist Name: OneRepublic 
+ID: 49 Track Name: Die For You Artist Name: The Weeknd 
+ID: 50 Track Name: Starboy Artist Name: "The Weeknd 
+ID: 51 Track Name: Die For You - Remix Artist Name: "Ariana Grande 
+ID: 52 Track Name: El Cielo Artist Name: "Feid 
+ID: 53 Track Name: Baby Don't Hurt Me Artist Name: "David Guetta 
+ID: 54 Track Name: AMARGURA Artist Name: Karol G 
+ID: 55 Track Name: (It Goes Like) Nanana - Edit Artist Name: Peggy Gou 
+ID: 56 Track Name: Another Love Artist Name: Tom Odell 
+ID: 57 Track Name: Blinding Lights Artist Name: The Weeknd 
+ID: 58 Track Name: Moonlight Artist Name: Kali Uchis 
+ID: 59 Track Name: La Bachata Artist Name: Manuel Turizo 
+ID: 60 Track Name: S91 Artist Name: Karol G 
+ID: 61 Track Name: cardigan Artist Name: Taylor Swift 
+ID: 62 Track Name: T�� Artist Name: "dennis 
+ID: 63 Track Name: Boy's a liar Pt. 2 Artist Name: "PinkPantheress 
+ID: 64 Track Name: Left and Right (Feat. Jung Kook of BTS) Artist Name: "Charlie Puth 
+ID: 65 Track Name: BESO Artist Name: "Rauw Alejandro 
+ID: 66 Track Name: Hey Mor Artist Name: "Ozuna 
+ID: 67 Track Name: Yellow Artist Name: Chris Molitor 
+ID: 68 Track Name: Karma Artist Name: Taylor Swift 
+ID: 69 Track Name: People Artist Name: Libianca 
+ID: 70 Track Name: Overdrive Artist Name: Post Malone 
+ID: 71 Track Name: Enchanted (Taylor's Version) Artist Name: Taylor Swift 
+ID: 72 Track Name: BABY HELLO Artist Name: "Rauw Alejandro 
+ID: 73 Track Name: Heat Waves Artist Name: Glass Animals 
+ID: 74 Track Name: golden hour Artist Name: JVKE 
+ID: 75 Track Name: Sweater Weather Artist Name: The Neighbourhood 
+ID: 76 Track Name: "Quevedo: Bzrp Music Sessions Artist Name:  Vol. 52" 
+ID: 77 Track Name: Viva La Vida Artist Name: Coldplay 
+ID: 78 Track Name: Here With Me Artist Name: d4vd 
+ID: 79 Track Name: Unholy (feat. Kim Petras) Artist Name: "Sam Smith 
+ID: 80 Track Name: Yandel 150 Artist Name: "Yandel 
+ID: 81 Track Name: CORAZ��N VA Artist Name: Maria Becerra 
+ID: 82 Track Name: Riptide Artist Name: Vance Joy 
+ID: 83 Track Name: Until I Found You (with Em Beihold) - Em Beihold Version Artist Name: "Em Beihold 
+ID: 84 Track Name: Novidade na �� Artist Name: "Mc Livinho 
+ID: 85 Track Name: Back To December (Taylor's Version) Artist Name: Taylor Swift 
+ID: 86 Track Name: STAY (with Justin Bieber) Artist Name: "Justin Bieber 
+ID: 87 Track Name: El Merengue Artist Name: "Marshmello 
+ID: 88 Track Name: Someone You Loved Artist Name: Lewis Capaldi 
+ID: 89 Track Name: Me Porto Bonito Artist Name: "Chencho Corleone 
+ID: 90 Track Name: Makeba Artist Name: Jain 
+ID: 91 Track Name: MONTAGEM - FR PUNK Artist Name: "Ayparia 
+ID: 92 Track Name: Fast Car Artist Name: Luke Combs 
+ID: 93 Track Name: What It Is (Solo Version) Artist Name: Doechii 
+ID: 94 Track Name: Coco Chanel Artist Name: "Bad Bunny 
+ID: 95 Track Name: Don���t Bl Artist Name: Taylor Swift 
+ID: 96 Track Name: Still With You Artist Name: Jung Kook 
+ID: 97 Track Name: All My Life (feat. J. Cole) Artist Name: "J. Cole 
+ID: 98 Track Name: Say Yes To Heaven Artist Name: Lana Del Rey 
+ID: 99 Track Name: Snooze Artist Name: SZA 
+ID: 100 Track Name: Summertime Sadness Artist Name: Lana Del Rey 
+ID: 101 Track Name: Take Two Artist Name: BTS 
+ID: 102 Track Name: Lover Artist Name: Taylor Swift 
+ID: 103 Track Name: Too Many Nights (feat. Don Toliver & with Future) Artist Name: "Future 
+ID: 104 Track Name: Chemical Artist Name: Post Malone 
+ID: 105 Track Name: Mockingbird Artist Name: Eminem 
+ID: 106 Track Name: New Jeans Artist Name: NewJeans 
+ID: 107 Track Name: Primera Cita Artist Name: Carin Leon 
+ID: 108 Track Name: Cold Heart - PNAU Remix Artist Name: "Dua Lipa 
+ID: 109 Track Name: Dandelions Artist Name: Ruth B. 
+ID: 110 Track Name: Bones Artist Name: Imagine Dragons 
+ID: 111 Track Name: Set Fire to the Rain Artist Name: Adele 
+ID: 112 Track Name: Money Trees Artist Name: "Kendrick Lamar 
+ID: 113 Track Name: Tak Segampang Itu Artist Name: Anggi Marito 
+ID: 114 Track Name: LAGUNAS Artist Name: "Jasiel Nu��ez 
+ID: 115 Track Name: Mine (Taylor's Version) Artist Name: Taylor Swift 
+ID: 116 Track Name: Everybody Wants To Rule The World Artist Name: Tears For Fears 
+ID: 117 Track Name: No Role Modelz Artist Name: J. Cole 
+ID: 118 Track Name: Tattoo Artist Name: Loreen 
+ID: 119 Track Name: Rara Vez Artist Name: "Taiu 
+ID: 120 Track Name: VAGABUNDO Artist Name: "Sebastian Yatra 
+ID: 121 Track Name: august Artist Name: Taylor Swift 
+ID: 122 Track Name: LUNA Artist Name: "Junior H 
+ID: 123 Track Name: Miracle (with Ellie Goulding) Artist Name: "Calvin Harris 
+ID: 124 Track Name: Nonsense Artist Name: Sabrina Carpenter 
+ID: 125 Track Name: Que Vuelvas Artist Name: "Carin Leon 
+ID: 126 Track Name: Por las Noches Artist Name: Peso Pluma 
+ID: 127 Track Name: Feliz Cumplea��os Fe Artist Name: Feid 
+ID: 128 Track Name: Can't Hold Us (feat. Ray Dalton) Artist Name: "Ray Dalton 
+ID: 129 Track Name: Watermelon Sugar Artist Name: Harry Styles 
+ID: 130 Track Name: lovely - Bonus Track Artist Name: "Billie Eilish 
+ID: 131 Track Name: "Rauw Alejandro: Bzrp Music Sessions Artist Name:  Vol. 56" 
+ID: 132 Track Name: Queencard Artist Name: (G)I-DLE 
+ID: 133 Track Name: OMG Artist Name: NewJeans 
+ID: 134 Track Name: Radio Artist Name: Lana Del Rey 
+ID: 135 Track Name: "Shakira: Bzrp Music Sessions Artist Name:  Vol. 53" 
+ID: 136 Track Name: 505 Artist Name: Arctic Monkeys 
+ID: 137 Track Name: "Calling (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee Artist Name:  NAV 
+ID: 138 Track Name: Trance (with Travis Scott & Young Thug) Artist Name: "Travis Scott 
+ID: 139 Track Name: "Tere Vaaste (From ""Zara Hatke Zara Bachke"")" Artist Name: "Sachin-Jigar 
+ID: 140 Track Name: Perfect Artist Name: Ed Sheeran 
+ID: 141 Track Name: Romantic Homicide Artist Name: d4vd 
+ID: 142 Track Name: Believer Artist Name: Imagine Dragons 
+ID: 143 Track Name: Novo Balan� Artist Name: "Veigh 
+ID: 144 Track Name: "Gol Bolinha Artist Name:  Gol Quadrado 2" 
+ID: 145 Track Name: Without Me Artist Name: Eminem 
+ID: 146 Track Name: QUEMA Artist Name: "Sog 
+ID: 147 Track Name: Stargirl Interlude Artist Name: "The Weeknd 
+ID: 148 Track Name: Ojitos Lindos Artist Name: "Bomba Est��reo 
+ID: 149 Track Name: Somewhere Only We Know Artist Name: Keane 
+ID: 150 Track Name: Those Eyes Artist Name: New West 
+ID: 151 Track Name: El Gordo Trae El Mando Artist Name: Chino Pacas 
+ID: 152 Track Name: Mi Bello Angel Artist Name: Natanael Cano 
+ID: 153 Track Name: Bye Artist Name: Peso Pluma 
+ID: 154 Track Name: Danza Kuduro Artist Name: "Don Omar 
+ID: 155 Track Name: Nosso Quadro Artist Name: "Ana Castela 
+ID: 156 Track Name: Locked Out Of Heaven Artist Name: Bruno Mars 
+ID: 157 Track Name: Un Finde | CROSSOVER #2 Artist Name: "Big One 
+ID: 158 Track Name: Jimmy Cooks (feat. 21 Savage) Artist Name: "Drake 
+ID: 159 Track Name: Counting Stars Artist Name: OneRepublic 
+ID: 160 Track Name: Ghost Artist Name: Justin Bieber 
+ID: 161 Track Name: Under The Influence Artist Name: Chris Brown 
+ID: 162 Track Name: PRC Artist Name: "Natanael Cano 
+ID: 163 Track Name: Gasolina Artist Name: Daddy Yankee 
+ID: 164 Track Name: One Dance Artist Name: "Drake 
+ID: 165 Track Name: Enchanted Artist Name: Taylor Swift 
+ID: 166 Track Name: Save Your Tears Artist Name: The Weeknd 
+ID: 167 Track Name: Sure Thing Artist Name: Miguel 
+ID: 168 Track Name: Every Breath You Take - Remastered 2003 Artist Name: The Police 
+ID: 169 Track Name: The Night We Met Artist Name: Lord Huron 
+ID: 170 Track Name: We Found Love Artist Name: "Rihanna 
+ID: 171 Track Name: When I Was Your Man Artist Name: Bruno Mars 
+ID: 172 Track Name: Let Me Down Slowly Artist Name: Alec Benjamin 
+ID: 173 Track Name: "Am I Dreaming (Metro Boomin & A$AP Rocky Artist Name:  Roisee)" 
+ID: 174 Track Name: Do I Wanna Know? Artist Name: Arctic Monkeys 
+ID: 175 Track Name: Demons Artist Name: Imagine Dragons 
+ID: 176 Track Name: ������������ Artist Name: YOASOBI 
+ID: 177 Track Name: Reminder Artist Name: The Weeknd 
+ID: 178 Track Name: Shake It Off Artist Name: Taylor Swift 
+ID: 179 Track Name: Why'd You Only Call Me When You're High? Artist Name: Arctic Monkeys 
+ID: 180 Track Name: SNAP Artist Name: Rosa Linn 
+ID: 181 Track Name: Shape of You Artist Name: Ed Sheeran 
+ID: 182 Track Name: Night Changes Artist Name: One Direction 
+ID: 183 Track Name: Fin de Semana Artist Name: "Oscar Maydon 
+ID: 184 Track Name: Creep Artist Name: Radiohead 
+ID: 185 Track Name: Car's Outside Artist Name: James Arthur 
+ID: 186 Track Name: Apocalypse Artist Name: Cigarettes After Sex 
+ID: 187 Track Name: Cheques Artist Name: Shubh 
+ID: 188 Track Name: Pink + White Artist Name: Frank Ocean 
+ID: 189 Track Name: Circles Artist Name: Post Malone 
+ID: 190 Track Name: Just The Way You Are Artist Name: Bruno Mars 
+ID: 191 Track Name: Take Me To Church Artist Name: Hozier 
+ID: 192 Track Name: Bebe Dame Artist Name: "Fuerza Regida 
+ID: 193 Track Name: You Belong With Me (Taylor���s Ve Artist Name: Taylor Swift 
+ID: 194 Track Name: Titi Me Pregunt� Artist Name: Bad Bunny 
+ID: 195 Track Name: Better Than Revenge (Taylor's Version) Artist Name: Taylor Swift 
+ID: 196 Track Name: Shut up My Moms Calling Artist Name: Hotel Ugly 
+ID: 197 Track Name: Have You Ever Seen The Rain? Artist Name: Creedence Clearwater Revival 
+ID: 198 Track Name: Es un Secreto Artist Name: Plan B 
+ID: 199 Track Name: POLARIS - Remix Artist Name: "Feid 
+ID: 200 Track Name: Ditto Artist Name: NewJeans 
+ID: 201 Track Name: Take On Me Artist Name: a-ha 
+ID: 202 Track Name: "Annihilate (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee Artist Name:  Lil Wayne 
+ID: 203 Track Name: "Angel Pt 1 (feat. Jimin of BTS Artist Name:  JVKE & Muni Long)" 
+ID: 204 Track Name: Acr��s Artist Name: Shakira 
+ID: 205 Track Name: AMG Artist Name: "Natanael Cano 
+ID: 206 Track Name: "Phir Aur Kya Chahiye (From ""Zara Hatke Zara Bachke"")" Artist Name: "Arijit Singh 
+ID: 207 Track Name: S-Class Artist Name: Stray Kids 
+ID: 208 Track Name: Hits Different Artist Name: Taylor Swift 
+ID: 209 Track Name: Chanel Artist Name: "Becky G 
+ID: 210 Track Name: Self Love (Spider-Man: Across the Spider-Verse) (Metro Boomin & Coi Leray) Artist Name: "Metro Boomin 
+ID: 211 Track Name: Area Codes Artist Name: "Kaliii 
+ID: 212 Track Name: Abcdario Artist Name: "Junior H 
+ID: 213 Track Name: Obsessed Artist Name: "Abhijay Sharma 
+ID: 214 Track Name: Pi��man De� Artist Name: "Semicenk 
+ID: 215 Track Name: FLOWER Artist Name: JISOO 
+ID: 216 Track Name: "All The Way Live (Spider-Man: Across the Spider-Verse) (Metro Boomin & Future Artist Name:  Lil Uzi Vert)" 
+ID: 217 Track Name: Eyes Closed Artist Name: Ed Sheeran 
+ID: 218 Track Name: Escapism. Artist Name: "RAYE 
+ID: 219 Track Name: La Jumpa Artist Name: "Arcangel 
+ID: 220 Track Name: Karma (feat. Ice Spice) Artist Name: "Taylor Swift 
+ID: 221 Track Name: Superhero (Heroes & Villains) [with Future & Chris Brown] Artist Name: "Future 
+ID: 222 Track Name: Las Morras Artist Name: "BLESSD 
+ID: 223 Track Name: CHORRITO PA LAS ANIMAS Artist Name: Feid 
+ID: 224 Track Name: Ch y la Pizza Artist Name: "Fuerza Regida 
+ID: 225 Track Name: Snow On The Beach (feat. More Lana Del Rey) Artist Name: "Lana Del Rey 
+ID: 226 Track Name: Players Artist Name: Coi Leray 
+ID: 227 Track Name: Bite Me Artist Name: ENHYPEN 
+ID: 228 Track Name: Stand By Me (feat. Morgan Wallen) Artist Name: "Lil Durk 
+ID: 229 Track Name: Normal Artist Name: Feid 
+ID: 230 Track Name: Hummingbird (Metro Boomin & James Blake) Artist Name: "James Blake 
+ID: 231 Track Name: Seu Brilho Sumiu - Ao Vivo Artist Name: "Israel & Rodolffo 
+ID: 232 Track Name: Bad Habit Artist Name: Steve Lacy 
+ID: 233 Track Name: CUFF IT Artist Name: Beyonc� 
+ID: 234 Track Name: Lilith (feat. SUGA of BTS) (Diablo IV Anthem) Artist Name: "Halsey 
+ID: 235 Track Name: 69 Artist Name: "Nicky Jam 
+ID: 236 Track Name: Ni��a Bo Artist Name: "Sean Paul 
+ID: 237 Track Name: Search & Rescue Artist Name: Drake 
+ID: 238 Track Name: AMERICA HAS A PROBLEM (feat. Kendrick Lamar) Artist Name: "Kendrick Lamar 
+ID: 239 Track Name: Lavender Haze Artist Name: Taylor Swift 
+ID: 240 Track Name: "Link Up (Metro Boomin & Don Toliver Artist Name:  Wizkid feat. BEAM & Toian) - Spider-Verse Remix (Spider-Man: Across the Spider-Verse )" 
+ID: 241 Track Name: Efecto Artist Name: Bad Bunny 
+ID: 242 Track Name: Erro Gostoso - Ao Vivo Artist Name: Simone Mendes 
+ID: 243 Track Name: Cupido Artist Name: Tini 
+ID: 244 Track Name: Just Wanna Rock Artist Name: Lil Uzi Vert 
+ID: 245 Track Name: Unstoppable Artist Name: Sia 
+ID: 246 Track Name: Until I Found You Artist Name: Stephen Sanchez 
+ID: 247 Track Name: Rich Flex Artist Name: "Drake 
+ID: 248 Track Name: Easy On Me Artist Name: Adele 
+ID: 249 Track Name: Cart��o B Artist Name: "MC Caverinha 
+ID: 250 Track Name: Danger (Spider) (Offset & JID) Artist Name: "Offset 
+ID: 251 Track Name: Oi Balde - Ao Vivo Artist Name: Z�� Neto & Crist 
+ID: 252 Track Name: The Real Slim Shady Artist Name: Eminem 
+ID: 253 Track Name: MERCHO Artist Name: "Migrantes 
+ID: 254 Track Name: The Color Violet Artist Name: Tory Lanez 
+ID: 255 Track Name: Glimpse of Us Artist Name: Joji 
+ID: 256 Track Name: Mejor Que Yo Artist Name: "Mambo Kingz 
+ID: 257 Track Name: Curtains Artist Name: Ed Sheeran 
+ID: 258 Track Name: UNFORGIVEN (feat. Nile Rodgers) Artist Name: "Nile Rodgers 
+ID: 259 Track Name: Haegeum Artist Name: Agust D 
+ID: 260 Track Name: Conex��es de M��fia (feat. Rich  Artist Name: "Rich The Kid 
+ID: 261 Track Name: MIENTRAS ME CURO DEL CORA Artist Name: Karol G 
+ID: 262 Track Name: Never Felt So Alone Artist Name: Labrinth 
+ID: 263 Track Name: X SI VOLVEMOS Artist Name: "Karol G 
+ID: 264 Track Name: ceilings Artist Name: Lizzy McAlpine 
+ID: 265 Track Name: Cupid Artist Name: Fifty Fifty 
+ID: 266 Track Name: I AM Artist Name: IVE 
+ID: 267 Track Name: Cupid ��� Twin Ver. (FIFTY FIFTY) ��� Spe Artist Name: sped up 8282 
+ID: 268 Track Name: Shorty Party Artist Name: "Cartel De Santa 
+ID: 269 Track Name: Super Artist Name: SEVENTEEN 
+ID: 270 Track Name: Slut Me Out Artist Name: NLE Choppa 
+ID: 271 Track Name: Double Fantasy (with Future) Artist Name: "The Weeknd 
+ID: 272 Track Name: All Of The Girls You Loved Before Artist Name: Taylor Swift 
+ID: 273 Track Name: PROVENZA Artist Name: Karol G 
+ID: 274 Track Name: Princess Diana (with Nicki Minaj) Artist Name: "Nicki Minaj 
+ID: 275 Track Name: Di Que Si Artist Name: "Grupo Marca Registrada 
+ID: 276 Track Name: Shivers Artist Name: Ed Sheeran 
+ID: 277 Track Name: Igualito a Mi Ap� Artist Name: "Fuerza Regida 
+ID: 278 Track Name: Shoong! (feat. LISA of BLACKPINK) Artist Name: "TAEYANG 
+ID: 279 Track Name: Komang Artist Name: Raim Laode 
+ID: 280 Track Name: DESPECH� Artist Name: ROSAL� 
+ID: 281 Track Name: Made You Look Artist Name: Meghan Trainor 
+ID: 282 Track Name: Watch This - ARIZONATEARS Pluggnb Remix Artist Name: "sped up nightcore 
+ID: 283 Track Name: No Se Va Artist Name: Grupo Frontera 
+ID: 284 Track Name: Punto G Artist Name: Quevedo 
+ID: 285 Track Name: Lovers Rock Artist Name: TV Girl 
+ID: 286 Track Name: METAMORPHOSIS Artist Name: INTERWORLD 
+ID: 287 Track Name: Mami Chula Artist Name: "Quevedo 
+ID: 288 Track Name: En Paris Artist Name: "El Chachito 
+ID: 289 Track Name: Set Me Free Pt.2 Artist Name: Jimin 
+ID: 290 Track Name: I Was Never There Artist Name: "The Weeknd 
+ID: 291 Track Name: Don't ever say love me (feat. RM of BTS) Artist Name: "RM 
+ID: 292 Track Name: Shut Down Artist Name: BLACKPINK 
+ID: 293 Track Name: Gato de Noche Artist Name: "Nengo Flow 
+ID: 294 Track Name: Call Out My Name Artist Name: The Weeknd 
+ID: 295 Track Name: Like Crazy (English Version) Artist Name: Jimin 
+ID: 296 Track Name: Rosa Pastel Artist Name: "Jasiel Nu��ez 
+ID: 297 Track Name: Sunroof Artist Name: "Nicky Youre 
+ID: 298 Track Name: Lose Yourself - Soundtrack Version Artist Name: Eminem 
+ID: 299 Track Name: Superman Artist Name: "Eminem 
+ID: 300 Track Name: Mas Rica Que Ayer Artist Name: "Mambo Kingz 
+ID: 301 Track Name: People Pt.2 (feat. IU) Artist Name: "IU 
+ID: 302 Track Name: REMIX EXCLUSIVO Artist Name: Feid 
+ID: 303 Track Name: "Arc��ngel: Bzrp Music Sessions Artist Name:  Vol" 
+ID: 304 Track Name: DOGTOOTH Artist Name: "Tyler 
+ID: 305 Track Name: 10:35 Artist Name: "Ti��sto 
+ID: 306 Track Name: SORRY NOT SORRY Artist Name: "Tyler 
+ID: 307 Track Name: HAPPY Artist Name: NF 
+ID: 308 Track Name: La Bebe Artist Name: Yng Lvcas 
+ID: 309 Track Name: I Know - PR1SVX Edit Artist Name: "Kanii 
+ID: 310 Track Name: Late Night Talking Artist Name: Harry Styles 
+ID: 311 Track Name: Le� Artist Name: Mar��lia Mendo 
+ID: 312 Track Name: Save Your Tears (with Ariana Grande) (Remix) Artist Name: "Ariana Grande 
+ID: 313 Track Name: Something in the Orange Artist Name: Zach Bryan 
+ID: 314 Track Name: VOID Artist Name: Melanie Martinez 
+ID: 315 Track Name: Dijeron Que No La Iba Lograr Artist Name: "Fuerza Regida 
+ID: 316 Track Name: Midnight Rain Artist Name: Taylor Swift 
+ID: 317 Track Name: If We Ever Broke Up Artist Name: Mae Stephens 
+ID: 318 Track Name: You Proof Artist Name: Morgan Wallen 
+ID: 319 Track Name: LA INOCENTE Artist Name: "Feid 
+ID: 320 Track Name: Malas Decisiones Artist Name: Kenia OS 
+ID: 321 Track Name: Murder In My Mind Artist Name: Kordhell 
+ID: 322 Track Name: Gangsta's Paradise Artist Name: "Coolio 
+ID: 323 Track Name: CAIRO Artist Name: "Karol G 
+ID: 324 Track Name: I Love You So Artist Name: The Walters 
+ID: 325 Track Name: Dark Red Artist Name: Steve Lacy 
+ID: 326 Track Name: Say You Won't Let Go Artist Name: James Arthur 
+ID: 327 Track Name: The Hills Artist Name: The Weeknd 
+ID: 328 Track Name: Heart To Heart Artist Name: Mac DeMarco 
+ID: 329 Track Name: Peaches (from The Super Mario Bros. Movie) Artist Name: Jack Black 
+ID: 330 Track Name: Marisola - Remix Artist Name: "Duki 
+ID: 331 Track Name: LOKERA Artist Name: "Brray 
+ID: 332 Track Name: Low Artist Name: SZA 
+ID: 333 Track Name: Numb Artist Name: Linkin Park 
+ID: 334 Track Name: Tormenta (feat. Bad Bunny) Artist Name: "Gorillaz 
+ID: 335 Track Name: on the street (with J. Cole) Artist Name: "j-hope 
+ID: 336 Track Name: One Thing At A Time Artist Name: Morgan Wallen 
+ID: 337 Track Name: Miss You Artist Name: "Robin Schulz 
+ID: 338 Track Name: Ain���t Tha Artist Name: Morgan Wallen 
+ID: 339 Track Name: Thinkin��� B Artist Name: Morgan Wallen 
+ID: 340 Track Name: Private Landing (feat. Justin Bieber & Future) Artist Name: "Don Toliver 
+ID: 341 Track Name: Everything I Love Artist Name: Morgan Wallen 
+ID: 342 Track Name: Heaven Artist Name: Niall Horan 
+ID: 343 Track Name: LET GO Artist Name: Central Cee 
+ID: 344 Track Name: Sial Artist Name: Mahalini 
+ID: 345 Track Name: I Wrote The Book Artist Name: Morgan Wallen 
+ID: 346 Track Name: "Apna Bana Le (From ""Bhediya"")" Artist Name: "Arijit Singh 
+ID: 347 Track Name: SPIT IN MY FACE! Artist Name: ThxSoMch 
+ID: 348 Track Name: PLAYA DEL INGL� Artist Name: "Myke Towers 
+ID: 349 Track Name: Man Made A Bar (feat. Eric Church) Artist Name: "Morgan Wallen 
+ID: 350 Track Name: Red Ruby Da Sleeze Artist Name: Nicki Minaj 
+ID: 351 Track Name: Kahani Suno 2.0 Artist Name: Kaifi Khalil 
+ID: 352 Track Name: Nobody Gets Me Artist Name: SZA 
+ID: 353 Track Name: PERO T� Artist Name: "Karol G 
+ID: 354 Track Name: Hype Boy Artist Name: NewJeans 
+ID: 355 Track Name: Bloody Mary Artist Name: Lady Gaga 
+ID: 356 Track Name: Monoton� Artist Name: "Ozuna 
+ID: 357 Track Name: ���98 Braves Artist Name: Morgan Wallen 
+ID: 358 Track Name: WANDA Artist Name: Quevedo 
+ID: 359 Track Name: Thought You Should Know Artist Name: Morgan Wallen 
+ID: 360 Track Name: In The End Artist Name: Linkin Park 
+ID: 361 Track Name: Zona De Perigo Artist Name: Leo Santana 
+ID: 362 Track Name: Lovezinho Artist Name: Treyce 
+ID: 363 Track Name: I Like You (A Happier Song) (with Doja Cat) Artist Name: "Post Malone 
+ID: 364 Track Name: Neverita Artist Name: Bad Bunny 
+ID: 365 Track Name: Vista Al Mar Artist Name: Quevedo 
+ID: 366 Track Name: Sem Alian��a no  Artist Name: "MC Xenon 
+ID: 367 Track Name: Enemy (with JID) - from the series Arcane League of Legends Artist Name: "Imagine Dragons 
+ID: 368 Track Name: Revenge Artist Name: XXXTENTACION 
+ID: 369 Track Name: Bombonzinho - Ao Vivo Artist Name: "Israel & Rodolffo 
+ID: 370 Track Name: LA CANCI� Artist Name: "J Balvin 
+ID: 371 Track Name: Qu�� Ago Artist Name: "Yuridia 
+ID: 372 Track Name: Love Again Artist Name: The Kid Laroi 
+ID: 373 Track Name: After Hours Artist Name: The Weeknd 
+ID: 374 Track Name: About Damn Time Artist Name: Lizzo 
+ID: 375 Track Name: Born With A Beer In My Hand Artist Name: Morgan Wallen 
+ID: 376 Track Name: ��������������������� Artist Name: Fujii Kaze 
+ID: 377 Track Name: Besos Moja2 Artist Name: "Wisin & Yandel 
+ID: 378 Track Name: Maan Meri Jaan Artist Name: King 
+ID: 379 Track Name: Moscow Mule Artist Name: Bad Bunny 
+ID: 380 Track Name: My Universe Artist Name: "Coldplay 
+ID: 381 Track Name: Devil Don��� Artist Name: Morgan Wallen 
+ID: 382 Track Name: LLYLM Artist Name: ROSAL� 
+ID: 383 Track Name: I'm Not Here To Make Friends Artist Name: "Sam Smith 
+ID: 384 Track Name: TRUSTFALL Artist Name: P!nk 
+ID: 385 Track Name: ANTIFRAGILE Artist Name: LE SSERAFIM 
+ID: 386 Track Name: Boy's a liar Artist Name: PinkPantheress 
+ID: 387 Track Name: VIBE (feat. Jimin of BTS) Artist Name: "TAEYANG 
+ID: 388 Track Name: Shirt Artist Name: SZA 
+ID: 389 Track Name: Lift Me Up - From Black Panther: Wakanda Forever - Music From and Inspired By Artist Name: Rihanna 
+ID: 390 Track Name: STAR WALKIN' (League of Legends Worlds Anthem) Artist Name: Lil Nas X 
+ID: 391 Track Name: "Sex Artist Name:  Drugs 
+ID: 392 Track Name: Boy With Luv (feat. Halsey) Artist Name: "Halsey 
+ID: 393 Track Name: "Hey Artist Name:  Mickey!" 
+ID: 394 Track Name: Calm Down Artist Name: R�� 
+ID: 395 Track Name: Jhoome Jo Pathaan Artist Name: "Arijit Singh 
+ID: 396 Track Name: Escapism. - Sped Up Artist Name: "RAYE 
+ID: 397 Track Name: Space Song Artist Name: Beach House 
+ID: 398 Track Name: Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack] Artist Name: "BTS 
+ID: 399 Track Name: Te Felicito Artist Name: "Shakira 
+ID: 400 Track Name: Mu�� Artist Name: "Steve Aoki 
+ID: 401 Track Name: TV Artist Name: Billie Eilish 
+ID: 402 Track Name: I'm Not The Only One Artist Name: Sam Smith 
+ID: 403 Track Name: Heather Artist Name: Conan Gray 
+ID: 404 Track Name: "Besharam Rang (From ""Pathaan"")" Artist Name: "Vishal-Shekhar 
+ID: 405 Track Name: One Kiss (with Dua Lipa) Artist Name: "Calvin Harris 
+ID: 406 Track Name: Sugar Rush Ride Artist Name: TOMORROW X TOGETHER 
+ID: 407 Track Name: Pink Venom Artist Name: BLACKPINK 
+ID: 408 Track Name: WAIT FOR U (feat. Drake & Tems) Artist Name: "Drake 
+ID: 409 Track Name: Don't Start Now Artist Name: Dua Lipa 
+ID: 410 Track Name: After Dark Artist Name: Mr.Kitty 
+ID: 411 Track Name: Eu Gosto Assim - Ao Vivo Artist Name: "Gustavo Mioto 
+ID: 412 Track Name: INDUSTRY BABY (feat. Jack Harlow) Artist Name: "Jack Harlow 
+ID: 413 Track Name: MIDDLE OF THE NIGHT Artist Name: Elley Duh� 
+ID: 414 Track Name: Atlantis Artist Name: Seafret 
+ID: 415 Track Name: PUNTO 40 Artist Name: "Baby Rasta 
+ID: 416 Track Name: Evoque Prata Artist Name: "DJ Escobar 
+ID: 417 Track Name: How Do I Say Goodbye Artist Name: Dean Lewis 
+ID: 418 Track Name: Blind Artist Name: SZA 
+ID: 419 Track Name: Die For You Artist Name: Joji 
+ID: 420 Track Name: Doja Artist Name: Central Cee 
+ID: 421 Track Name: Gatita Artist Name: Bellakath 
+ID: 422 Track Name: Rumble Artist Name: "Skrillex 
+ID: 423 Track Name: Niagara Falls (Foot or 2) [with Travis Scott & 21 Savage] Artist Name: "Travis Scott 
+ID: 424 Track Name: Yonaguni Artist Name: Bad Bunny 
+ID: 425 Track Name: Super Freaky Girl Artist Name: Nicki Minaj 
+ID: 426 Track Name: Running Up That Hill (A Deal With God) Artist Name: Kate Bush 
+ID: 427 Track Name: Dream On Artist Name: Aerosmith 
+ID: 428 Track Name: Limbo Artist Name: Freddie Dredd 
+ID: 429 Track Name: Where Are You Now Artist Name: "Lost Frequencies 
+ID: 430 Track Name: WORTH NOTHING Artist Name: "Twisted 
+ID: 431 Track Name: Bad Habits Artist Name: Ed Sheeran 
+ID: 432 Track Name: KICK BACK Artist Name: Kenshi Yonezu 
+ID: 433 Track Name: Evergreen (You Didn���t Deserve Me A Artist Name: Omar Apollo 
+ID: 434 Track Name: Good Days Artist Name: SZA 
+ID: 435 Track Name: Levitating (feat. DaBaby) Artist Name: "Dua Lipa 
+ID: 436 Track Name: Woman Artist Name: Doja Cat 
+ID: 437 Track Name: Shut up My Moms Calling - (Sped Up) Artist Name: Hotel Ugly 
+ID: 438 Track Name: Ferrari Artist Name: "James Hype 
+ID: 439 Track Name: "You're On Your Own Artist Name:  Kid" 
+ID: 440 Track Name: "Kesariya (From ""Brahmastra"")" Artist Name: "Pritam 
+ID: 441 Track Name: Agudo M��gi Artist Name: "Styrx 
+ID: 442 Track Name: Payphone Artist Name: "Maroon 5 
+ID: 443 Track Name: All I Want for Christmas Is You Artist Name: Mariah Carey 
+ID: 444 Track Name: Last Christmas Artist Name: Wham! 
+ID: 445 Track Name: Rockin' Around The Christmas Tree Artist Name: Brenda Lee 
+ID: 446 Track Name: Jingle Bell Rock Artist Name: Bobby Helms 
+ID: 447 Track Name: It's Beginning To Look A Lot Like Christmas Artist Name: Michael Bubl� 
+ID: 448 Track Name: Santa Tell Me Artist Name: Ariana Grande 
+ID: 449 Track Name: It's the Most Wonderful Time of the Year Artist Name: Andy Williams 
+ID: 450 Track Name: Let It Snow! Let It Snow! Let It Snow! Artist Name: Dean Martin 
+ID: 451 Track Name: Snowman Artist Name: Sia 
+ID: 452 Track Name: Underneath the Tree Artist Name: Kelly Clarkson 
+ID: 453 Track Name: Feliz Navidad Artist Name: Jos�� Felic 
+ID: 454 Track Name: Holly Jolly Christmas Artist Name: Michael Bubl� 
+ID: 455 Track Name: Mistletoe Artist Name: Justin Bieber 
+ID: 456 Track Name: Sleigh Ride Artist Name: The Ronettes 
+ID: 457 Track Name: Seek & Destroy Artist Name: SZA 
+ID: 458 Track Name: Love Language Artist Name: SZA 
+ID: 459 Track Name: Happy Xmas (War Is Over) Artist Name: "John Lennon 
+ID: 460 Track Name: Used (feat. Don Toliver) Artist Name: "SZA 
+ID: 461 Track Name: A Holly Jolly Christmas - Single Version Artist Name: Burl Ives 
+ID: 462 Track Name: The Christmas Song (Merry Christmas To You) - Remastered 1999 Artist Name: Nat King Cole 
+ID: 463 Track Name: Wonderful Christmastime - Edited Version / Remastered 2011 Artist Name: Paul McCartney 
+ID: 464 Track Name: Do They Know It's Christmas? - 1984 Version Artist Name: Band Aid 
+ID: 465 Track Name: Ghost in the Machine (feat. Phoebe Bridgers) Artist Name: "SZA 
+ID: 466 Track Name: Special Artist Name: SZA 
+ID: 467 Track Name: Merry Christmas Everyone Artist Name: Shakin' Stevens 
+ID: 468 Track Name: Let It Snow! Let It Snow! Let It Snow! Artist Name: "Frank Sinatra 
+ID: 469 Track Name: SOS Artist Name: SZA 
+ID: 470 Track Name: Open Arms (feat. Travis Scott) Artist Name: "SZA 
+ID: 471 Track Name: White Christmas Artist Name: "Bing Crosby 
+ID: 472 Track Name: Driving Home for Christmas - 2019 Remaster Artist Name: Chris Rea 
+ID: 473 Track Name: Christmas (Baby Please Come Home) Artist Name: Darlene Love 
+ID: 474 Track Name: Gone Girl Artist Name: SZA 
+ID: 475 Track Name: F2F Artist Name: SZA 
+ID: 476 Track Name: Notice Me Artist Name: SZA 
+ID: 477 Track Name: Merry Christmas Artist Name: "Ed Sheeran 
+ID: 478 Track Name: It's Beginning to Look a Lot Like Christmas (with Mitchell Ayres & His Orchestra) Artist Name: "Perry Como 
+ID: 479 Track Name: My Only Wish (This Year) Artist Name: Britney Spears 
+ID: 480 Track Name: Antidepresan Artist Name: "Mabel Matiz 
+ID: 481 Track Name: Wild Flower (with youjeen) Artist Name: RM 
+ID: 482 Track Name: I Hate U Artist Name: SZA 
+ID: 483 Track Name: Raindrops (Insane) [with Travis Scott] Artist Name: "Travis Scott 
+ID: 484 Track Name: SPIT IN MY FACE! Artist Name: ThxSoMch 
+ID: 485 Track Name: Deck The Hall - Remastered 1999 Artist Name: Nat King Cole 
+ID: 486 Track Name: Smoking on my Ex Pack Artist Name: SZA 
+ID: 487 Track Name: Conceited Artist Name: SZA 
+ID: 488 Track Name: Snow On The Beach (feat. Lana Del Rey) Artist Name: "Taylor Swift 
+ID: 489 Track Name: Maroon Artist Name: Taylor Swift 
+ID: 490 Track Name: Tubar��o Te Artist Name: "Dj LK da Esc��cia 
+ID: 491 Track Name: Bejeweled Artist Name: Taylor Swift 
+ID: 492 Track Name: Tarot Artist Name: "Bad Bunny 
+ID: 493 Track Name: You Make It Feel Like Christmas (feat. Blake Shelton) Artist Name: "Gwen Stefani 
+ID: 494 Track Name: Desesperados Artist Name: "Chencho Corleone 
+ID: 495 Track Name: Too Late Artist Name: SZA 
+ID: 496 Track Name: Party Artist Name: "Bad Bunny 
+ID: 497 Track Name: Run Rudolph Run - Single Version Artist Name: Chuck Berry 
+ID: 498 Track Name: Jingle Bells - Remastered 1999 Artist Name: Frank Sinatra 
+ID: 499 Track Name: Far Artist Name: SZA 
+ID: 500 Track Name: On Time (with John Legend) Artist Name: "John Legend 
+ID: 501 Track Name: GAT�� Artist Name: "Maldy 
+ID: 502 Track Name: ���abcdefu Artist Name: Gayle 
+ID: 503 Track Name: Sacrifice Artist Name: The Weeknd 
+ID: 504 Track Name: Is There Someone Else? Artist Name: The Weeknd 
+ID: 505 Track Name: Fingers Crossed Artist Name: "Lauren Spencer Smith 
+ID: 506 Track Name: Out of Time Artist Name: The Weeknd 
+ID: 507 Track Name: Do It To It Artist Name: "Cherish 
+ID: 508 Track Name: We Don't Talk About Bruno Artist Name: "Adassa 
+ID: 509 Track Name: Pepas Artist Name: Farruko 
+ID: 510 Track Name: How Do I Make You Love Me? Artist Name: The Weeknd 
+ID: 511 Track Name: Gasoline Artist Name: The Weeknd 
+ID: 512 Track Name: Infinity Artist Name: Jaymes Young 
+ID: 513 Track Name: Less Than Zero Artist Name: The Weeknd 
+ID: 514 Track Name: Take My Breath Artist Name: The Weeknd 
+ID: 515 Track Name: good 4 u Artist Name: Olivia Rodrigo 
+ID: 516 Track Name: "Here We Go��� Again (feat. Tyler Artist Name:  the Cr" 
+ID: 517 Track Name: Best Friends Artist Name: The Weeknd 
+ID: 518 Track Name: Kiss Me More (feat. SZA) Artist Name: "SZA 
+ID: 519 Track Name: I Heard You're Married (feat. Lil Wayne) Artist Name: "The Weeknd 
+ID: 520 Track Name: Need To Know Artist Name: Doja Cat 
+ID: 521 Track Name: MONTERO (Call Me By Your Name) Artist Name: Lil Nas X 
+ID: 522 Track Name: love nwantiti (ah ah ah) Artist Name: Ckay 
+ID: 523 Track Name: Dawn FM Artist Name: The Weeknd 
+ID: 524 Track Name: Surface Pressure Artist Name: Jessica Darrow 
+ID: 525 Track Name: Starry Eyes Artist Name: The Weeknd 
+ID: 526 Track Name: THATS WHAT I WANT Artist Name: Lil Nas X 
+ID: 527 Track Name: One Right Now (with The Weeknd) Artist Name: "The Weeknd 
+ID: 528 Track Name: Beggin Artist Name: M��ne 
+ID: 529 Track Name: Mon Amour - Remix Artist Name: "Aitana 
+ID: 530 Track Name: Lo Siento BB:/ (with Bad Bunny & Julieta Venegas) Artist Name: "Julieta Venegas 
+ID: 531 Track Name: MONEY Artist Name: Lisa 
+ID: 532 Track Name: The Motto Artist Name: "Ti��sto 
+ID: 533 Track Name: Happier Than Ever Artist Name: Billie Eilish 
+ID: 534 Track Name: Moth To A Flame (with The Weeknd) Artist Name: "The Weeknd 
+ID: 535 Track Name: traitor Artist Name: "Juan Cruz Toledo 
+ID: 536 Track Name: Toxic Artist Name: BoyWithUke 
+ID: 537 Track Name: drivers license Artist Name: Olivia Rodrigo 
+ID: 538 Track Name: Malvad�� Artist Name: "Xam�� 
+ID: 539 Track Name: All Too Well (10 Minute Version) (Taylor's Version) (From The Vault) Artist Name: Taylor Swift 
+ID: 540 Track Name: Don���t Break My Artist Name: The Weeknd 
+ID: 541 Track Name: Oh My God Artist Name: Adele 
+ID: 542 Track Name: Entre Nosotros (Remix) [con Nicki Nicole] Artist Name: "Lit Killah 
+ID: 543 Track Name: A Tale By Quincy Artist Name: The Weeknd 
+ID: 544 Track Name: I AM WOMAN Artist Name: Emmy Meli 
+ID: 545 Track Name: Medallo Artist Name: "Justin Quiles 
+ID: 546 Track Name: It'll Be Okay Artist Name: Shawn Mendes 
+ID: 547 Track Name: Softcore Artist Name: The Neighbourhood 
+ID: 548 Track Name: Super Gremlin Artist Name: Kodak Black 
+ID: 549 Track Name: Volv� Artist Name: "Aventura 
+ID: 550 Track Name: Todo De Ti Artist Name: Rauw Alejandro 
+ID: 551 Track Name: Love Nwantiti - Remix Artist Name: "Ckay 
+ID: 552 Track Name: Smokin Out The Window Artist Name: "Bruno Mars 
+ID: 553 Track Name: Meet Me At Our Spot Artist Name: "THE ANXIETY 
+ID: 554 Track Name: Every Angel is Terrifying Artist Name: The Weeknd 
+ID: 555 Track Name: Tacones Rojos Artist Name: Sebastian Yatra 
+ID: 556 Track Name: Peaches (feat. Daniel Caesar & Giveon) Artist Name: "Justin Bieber 
+ID: 557 Track Name: Dakiti Artist Name: "Bad Bunny 
+ID: 558 Track Name: "Tiago PZK: Bzrp Music Sessions Artist Name:  Vol. 48" 
+ID: 559 Track Name: L��� Artist Name: Stromae 
+ID: 560 Track Name: Nost��l Artist Name: "Chris Brown 
+ID: 561 Track Name: Better Days (NEIKED x Mae Muller x Polo G) Artist Name: "NEIKED 
+ID: 562 Track Name: Life Goes On Artist Name: Oliver Tree 
+ID: 563 Track Name: Sad Girlz Luv Money Remix (feat. Kali Uchis) Artist Name: "Kali Uchis 
+ID: 564 Track Name: Butter Artist Name: BTS 
+ID: 565 Track Name: pushin P (feat. Young Thug) Artist Name: "Young Thug 
+ID: 566 Track Name: You Right Artist Name: "Doja Cat 
+ID: 567 Track Name: deja vu Artist Name: Olivia Rodrigo 
+ID: 568 Track Name: Dynamite Artist Name: BTS 
+ID: 569 Track Name: TO THE MOON Artist Name: Jnr Choi 
+ID: 570 Track Name: Lost in the Fire Artist Name: "The Weeknd 
+ID: 571 Track Name: Salimo de Noche Artist Name: "Trueno 
+ID: 572 Track Name: Volando - Remix Artist Name: "Sech 
+ID: 573 Track Name: Leave The Door Open Artist Name: "Bruno Mars 
+ID: 574 Track Name: Knife Talk (with 21 Savage ft. Project Pat) Artist Name: "Drake 
+ID: 575 Track Name: Don't Be Shy Artist Name: "Ti��sto 
+ID: 576 Track Name: Love Grows (Where My Rosemary Goes) Artist Name: Edison Lighthouse 
+ID: 577 Track Name: LA FAMA (with The Weeknd) Artist Name: "The Weeknd 
+ID: 578 Track Name: The Family Madrigal Artist Name: "Olga Merediz 
+ID: 579 Track Name: Phantom Regret by Jim Artist Name: The Weeknd 
+ID: 580 Track Name: Dos Oruguitas Artist Name: Sebastian Yatra 
+ID: 581 Track Name: Freaks Artist Name: Surf Curse 
+ID: 582 Track Name: Acapulco Artist Name: Jason Derulo 
+ID: 583 Track Name: Daddy Issues Artist Name: The Neighbourhood 
+ID: 584 Track Name: thought i was playing Artist Name: "21 Savage 
+ID: 585 Track Name: ELEVEN Artist Name: IVE 
+ID: 586 Track Name: Mood (feat. Iann Dior) Artist Name: "24kgoldn 
+ID: 587 Track Name: What Else Can I Do? Artist Name: "Stephanie Beatriz 
+ID: 588 Track Name: DANCE CRIP Artist Name: Trueno 
+ID: 589 Track Name: Miserable Man Artist Name: David Kushner 
+ID: 590 Track Name: happier Artist Name: Olivia Rodrigo 
+ID: 591 Track Name: Praise God Artist Name: Kanye West 
+ID: 592 Track Name: Get Into It (Yuh) Artist Name: Doja Cat 
+ID: 593 Track Name: Before You Go Artist Name: Lewis Capaldi 
+ID: 594 Track Name: Sky Artist Name: Playboi Carti 
+ID: 595 Track Name: Rolling in the Deep Artist Name: Adele 
+ID: 596 Track Name: Sobrio Artist Name: Maluma 
+ID: 597 Track Name: Peru Artist Name: "Ed Sheeran 
+ID: 598 Track Name: favorite crime Artist Name: Olivia Rodrigo 
+ID: 599 Track Name: Thunder Artist Name: "Prezioso 
+ID: 600 Track Name: The Business Artist Name: Ti�� 
+ID: 601 Track Name: positions Artist Name: Ariana Grande 
+ID: 602 Track Name: I WANNA BE YOUR SLAVE Artist Name: M��ne 
+ID: 603 Track Name: Vai L�� Em Casa  Artist Name: "Mar��lia Mendon��a 
+ID: 604 Track Name: The Feels Artist Name: TWICE 
+ID: 605 Track Name: HEARTBREAK ANNIVERSARY Artist Name: Giveon 
+ID: 606 Track Name: No Lie Artist Name: "Sean Paul 
+ID: 607 Track Name: OUT OUT (feat. Charli XCX & Saweetie) Artist Name: "Charli XCX 
+ID: 608 Track Name: Pope Is a Rockstar Artist Name: SALES 
+ID: 609 Track Name: 2055 Artist Name: Sleepy hallow 
+ID: 610 Track Name: Bored Artist Name: Billie Eilish 
+ID: 611 Track Name: Happier Than Ever - Edit Artist Name: Billie Eilish 
+ID: 612 Track Name: Astronaut In The Ocean Artist Name: Masked Wolf 
+ID: 613 Track Name: Ley Seca Artist Name: "Anuel Aa 
+ID: 614 Track Name: Every Summertime Artist Name: NIKI 
+ID: 615 Track Name: Talking To The Moon Artist Name: Bruno Mars 
+ID: 616 Track Name: you broke me first Artist Name: Tate McRae 
+ID: 617 Track Name: The Nights Artist Name: Avicii 
+ID: 618 Track Name: Take My Breath Artist Name: The Weeknd 
+ID: 619 Track Name: Way 2 Sexy (with Future & Young Thug) Artist Name: "Drake 
+ID: 620 Track Name: C�� Artist Name: Rauw Alejandro 
+ID: 621 Track Name: Enemy - from the series Arcane League of Legends Artist Name: "Imagine Dragons 
+ID: 622 Track Name: Dance Monkey Artist Name: Tones and I 
+ID: 623 Track Name: Lucid Dreams Artist Name: Juice WRLD 
+ID: 624 Track Name: Qu�� M�� Artist Name: "J Balvin 
+ID: 625 Track Name: All of Me Artist Name: John Legend 
+ID: 626 Track Name: Smells Like Teen Spirit - Remastered 2021 Artist Name: Nirvana 
+ID: 627 Track Name: Arcade Artist Name: Duncan Laurence 
+ID: 628 Track Name: Fair Trade (with Travis Scott) Artist Name: "Drake 
+ID: 629 Track Name: Bar Artist Name: "Tini 
+ID: 630 Track Name: The Rumbling (TV Size) Artist Name: SiM 
+ID: 631 Track Name: family ties (with Kendrick Lamar) Artist Name: "Kendrick Lamar 
+ID: 632 Track Name: Mr. Brightside Artist Name: The Killers 
+ID: 633 Track Name: Blessed-Cursed Artist Name: ENHYPEN 
+ID: 634 Track Name: AM Remix Artist Name: "J Balvin 
+ID: 635 Track Name: Streets Artist Name: Doja Cat 
+ID: 636 Track Name: Shallow Artist Name: "Lady Gaga 
+ID: 637 Track Name: Polaroid Love Artist Name: ENHYPEN 
+ID: 638 Track Name: Leave Before You Love Me (with Jonas Brothers) Artist Name: "Marshmello 
+ID: 639 Track Name: Permission to Dance Artist Name: BTS 
+ID: 640 Track Name: Friday (feat. Mufasa & Hypeman) - Dopamine Re-Edit Artist Name: "Riton 
+ID: 641 Track Name: RAPSTAR Artist Name: Polo G 
+ID: 642 Track Name: 'Till I Collapse Artist Name: "Eminem 
+ID: 643 Track Name: Memories Artist Name: Maroon 5 
+ID: 644 Track Name: Se Le Ve Artist Name: "Arcangel 
+ID: 645 Track Name: 25k jacket (feat. Lil Baby) Artist Name: "Gunna 
+ID: 646 Track Name: When I���m Gone (with Katy  Artist Name: "Katy Perry 
+ID: 647 Track Name: Esque��a-Me Se For C Artist Name: "Mar��lia Mendon��a 
+ID: 648 Track Name: Mi��n Artist Name: "Tini 
+ID: 649 Track Name: S�� Artist Name: "Anuel Aa 
+ID: 650 Track Name: MAMIII Artist Name: "Karol G 
+ID: 651 Track Name: Still D.R.E. Artist Name: "Dr. Dre 
+ID: 652 Track Name: Stay Alive (Prod. SUGA of BTS) Artist Name: Jung Kook 
+ID: 653 Track Name: Boyfriend Artist Name: Dove Cameron 
+ID: 654 Track Name: The Joker And The Queen (feat. Taylor Swift) Artist Name: "Ed Sheeran 
+ID: 655 Track Name: The Next Episode Artist Name: "Dr. Dre 
+ID: 656 Track Name: Light Switch Artist Name: Charlie Puth 
+ID: 657 Track Name: City of Gods Artist Name: "Kanye West 
+ID: 658 Track Name: Brividi Artist Name: "Mahmood 
+ID: 659 Track Name: Lost Artist Name: Frank Ocean 
+ID: 660 Track Name: In Da Club Artist Name: 50 Cent 
+ID: 661 Track Name: she's all i wanna be Artist Name: Tate McRae 
+ID: 662 Track Name: Ginseng Strip 2002 Artist Name: Yung Lean 
+ID: 663 Track Name: All For Us - from the HBO Original Series Euphoria Artist Name: "Labrinth 
+ID: 664 Track Name: Notion Artist Name: The Rare Occasions 
+ID: 665 Track Name: Formula Artist Name: Labrinth 
+ID: 666 Track Name: Mount Everest Artist Name: Labrinth 
+ID: 667 Track Name: Excuses Artist Name: "Intense 
+ID: 668 Track Name: Cigarettes Artist Name: Juice WRLD 
+ID: 669 Track Name: "Cay�� La Noche (feat. Cruz Cafun�� Artist Name:  Abhir Hathi 
+ID: 670 Track Name: California Love - Original Version (Explicit) Artist Name: "Dr. Dre 
+ID: 671 Track Name: Forgot About Dre Artist Name: "Eminem 
+ID: 672 Track Name: Down Under (feat. Colin Hay) Artist Name: "Luude 
+ID: 673 Track Name: Mujeriego Artist Name: Ryan Castro 
+ID: 674 Track Name: HUMBLE. Artist Name: Kendrick Lamar 
+ID: 675 Track Name: Stan Artist Name: "Eminem 
+ID: 676 Track Name: Contection Artist Name: "GODZZ__- 
+ID: 677 Track Name: Swim Artist Name: Chase Atlantic 
+ID: 678 Track Name: A Tu Merced Artist Name: Bad Bunny 
+ID: 679 Track Name: Numb Little Bug Artist Name: Em Beihold 
+ID: 680 Track Name: 212 Artist Name: "Mainstreet 
+ID: 681 Track Name: Problem� Artist Name: "Alvaro Diaz 
+ID: 682 Track Name: Bussin Artist Name: "Nicki Minaj 
+ID: 683 Track Name: Worst Day Artist Name: Future 
+ID: 684 Track Name: Malvada Artist Name: Z�� Fe 
+ID: 685 Track Name: Hrs and Hrs Artist Name: Muni Long 
+ID: 686 Track Name: Alien Blues Artist Name: Vundabar 
+ID: 687 Track Name: Thinking Out Loud Artist Name: Ed Sheeran 
+ID: 688 Track Name: Still Don't Know My Name Artist Name: Labrinth 
+ID: 689 Track Name: Christmas Tree Artist Name: V 
+ID: 690 Track Name: Mal Feito - Ao Vivo Artist Name: "Mar��lia Mendon��a 
+ID: 691 Track Name: When I R.I.P. Artist Name: Labrinth 
+ID: 692 Track Name: Do We Have A Problem? Artist Name: "Nicki Minaj 
+ID: 693 Track Name: Forever Artist Name: Labrinth 
+ID: 694 Track Name: Gospel (with Eminem) Artist Name: "Eminem 
+ID: 695 Track Name: Se��o Artist Name: "Shawn Mendes 
+ID: 696 Track Name: NEW MAGIC WAND Artist Name: "Tyler 
+ID: 697 Track Name: Adore You Artist Name: Harry Styles 
+ID: 698 Track Name: La Santa Artist Name: "Daddy Yankee 
+ID: 699 Track Name: Something In The Way - Remastered 2021 Artist Name: Nirvana 
+ID: 700 Track Name: Sweetest Pie Artist Name: "Dua Lipa 
+ID: 701 Track Name: Bam Bam (feat. Ed Sheeran) Artist Name: "Camila Cabello 
+ID: 702 Track Name: Una Noche en Medell� Artist Name: Cris Mj 
+ID: 703 Track Name: Envolver Artist Name: Anitta 
+ID: 704 Track Name: Starlight Artist Name: Dave 
+ID: 705 Track Name: Hati-Hati di Jalan Artist Name: Tulus 
+ID: 706 Track Name: "I'm Tired - From ""Euphoria"" An Original HBO Series" Artist Name: Labrinth 
+ID: 707 Track Name: DAN��A Artist Name: "Mc Pedrinho 
+ID: 708 Track Name: Yo Voy (feat. Daddy Yankee) Artist Name: Zion & Lennox 
+ID: 709 Track Name: "Residente: Bzrp Music Sessions Artist Name:  Vol. 49" 
+ID: 710 Track Name: Jordan Artist Name: Ryan Castro 
+ID: 711 Track Name: Nail Tech Artist Name: Jack Harlow 
+ID: 712 Track Name: Chale Artist Name: Eden Mu�� 
+ID: 713 Track Name: DARARI Artist Name: Treasure 
+ID: 714 Track Name: Ya No Somos Ni Seremos Artist Name: Christian Nodal 
+ID: 715 Track Name: Thinking with My Dick Artist Name: "Kevin Gates 
+ID: 716 Track Name: Freaky Deaky Artist Name: "Tyga 
+ID: 717 Track Name: this is what falling in love feels like Artist Name: JVKE 
+ID: 718 Track Name: La Zona Artist Name: Bad Bunny 
+ID: 719 Track Name: Bohemian Rhapsody - Remastered 2011 Artist Name: Queen 
+ID: 720 Track Name: Hope Artist Name: XXXTENTACION 
+ID: 721 Track Name: Levitating Artist Name: Dua Lipa 
+ID: 722 Track Name: Wake Me Up - Radio Edit Artist Name: Avicii 
+ID: 723 Track Name: "jealousy Artist Name:  jealousy" 
+ID: 724 Track Name: Mon��y so Artist Name: YEAT 
+ID: 725 Track Name: Demasiadas Mujeres Artist Name: C. Tangana 
+ID: 726 Track Name: Something Just Like This Artist Name: "The Chainsmokers 
+ID: 727 Track Name: Closer Artist Name: "The Chainsmokers 
+ID: 728 Track Name: O.O Artist Name: NMIXX 
+ID: 729 Track Name: Somebody That I Used To Know Artist Name: "Gotye 
+ID: 730 Track Name: Tom's Diner Artist Name: "AnnenMayKantereit 
+ID: 731 Track Name: First Class Artist Name: Jack Harlow 
+ID: 732 Track Name: Plan A Artist Name: Paulo Londra 
+ID: 733 Track Name: Fuera del mercado Artist Name: Danny Ocean 
+ID: 734 Track Name: X ��LTIMA Artist Name: "Daddy Yankee 
+ID: 735 Track Name: When You're Gone Artist Name: Shawn Mendes 
+ID: 736 Track Name: In My Head Artist Name: Lil Tjay 
+ID: 737 Track Name: Wait a Minute! Artist Name: Willow 
+ID: 738 Track Name: LOVE DIVE Artist Name: IVE 
+ID: 739 Track Name: Pantysito Artist Name: "Feid 
+ID: 740 Track Name: Chance Artist Name: Paulo Londra 
+ID: 741 Track Name: Cool for the Summer Artist Name: Demi Lovato 
+ID: 742 Track Name: psychofreak (feat. WILLOW) Artist Name: "Camila Cabello 
+ID: 743 Track Name: Angel Baby Artist Name: Troye Sivan 
+ID: 744 Track Name: Vampiro Artist Name: "Matu�� 
+ID: 745 Track Name: Si Quieren Frontear Artist Name: "De La Ghetto 
+ID: 746 Track Name: Right On Artist Name: Lil Baby 
+ID: 747 Track Name: Me Arrepent� Artist Name: "Ak4:20 
+ID: 748 Track Name: That's Hilarious Artist Name: Charlie Puth 
+ID: 749 Track Name: Soy El Unico Artist Name: Yahritza Y Su Esencia 
+ID: 750 Track Name: RUMBAT� Artist Name: Daddy Yankee 
+ID: 751 Track Name: sentaDONA (Remix) s2 Artist Name: "Lu��sa Sonza 
+ID: 752 Track Name: Falling Artist Name: Harry Styles 
+ID: 753 Track Name: Sigue Artist Name: "Ed Sheeran 
+ID: 754 Track Name: Fim de Semana no Rio Artist Name: teto 
+ID: 755 Track Name: MANIAC Artist Name: Stray Kids 
+ID: 756 Track Name: There's Nothing Holdin' Me Back Artist Name: Shawn Mendes 
+ID: 757 Track Name: IDGAF (with blackbear) Artist Name: "Blackbear 
+ID: 758 Track Name: Golden Artist Name: Harry Styles 
+ID: 759 Track Name: Get Lucky - Radio Edit Artist Name: "Pharrell Williams 
+ID: 760 Track Name: Ain't Shit Artist Name: Doja Cat 
+ID: 761 Track Name: "Nobody Like U - From ""Turning Red""" Artist Name: "Jordan Fisher 
+ID: 762 Track Name: Still Life Artist Name: BIGBANG 
+ID: 763 Track Name: Photograph Artist Name: Ed Sheeran 
+ID: 764 Track Name: Love Yourself Artist Name: Justin Bieber 
+ID: 765 Track Name: N95 Artist Name: Kendrick Lamar 
+ID: 766 Track Name: About Damn Time Artist Name: Lizzo 
+ID: 767 Track Name: Die Hard Artist Name: "Kendrick Lamar 
+ID: 768 Track Name: Despu��s de la P Artist Name: Bad Bunny 
+ID: 769 Track Name: Un Ratito Artist Name: Bad Bunny 
+ID: 770 Track Name: United In Grief Artist Name: Kendrick Lamar 
+ID: 771 Track Name: Father Time (feat. Sampha) Artist Name: "Kendrick Lamar 
+ID: 772 Track Name: Yo No Soy Celoso Artist Name: Bad Bunny 
+ID: 773 Track Name: Rich Spirit Artist Name: Kendrick Lamar 
+ID: 774 Track Name: Cooped Up (with Roddy Ricch) Artist Name: "Post Malone 
+ID: 775 Track Name: Me Fui de Vacaciones Artist Name: Bad Bunny 
+ID: 776 Track Name: Silent Hill Artist Name: "Kendrick Lamar 
+ID: 777 Track Name: La Corriente Artist Name: "Tony Dize 
+ID: 778 Track Name: Count Me Out Artist Name: Kendrick Lamar 
+ID: 779 Track Name: Andrea Artist Name: "Buscabulla 
+ID: 780 Track Name: Dos Mil 16 Artist Name: Bad Bunny 
+ID: 781 Track Name: We Cry Together Artist Name: "Kendrick Lamar 
+ID: 782 Track Name: Savior Artist Name: "Kendrick Lamar 
+ID: 783 Track Name: Un Coco Artist Name: Bad Bunny 
+ID: 784 Track Name: Otro Atardecer Artist Name: "Bad Bunny 
+ID: 785 Track Name: Worldwide Steppers Artist Name: Kendrick Lamar 
+ID: 786 Track Name: Aguacero Artist Name: Bad Bunny 
+ID: 787 Track Name: Purple Hearts Artist Name: "Kendrick Lamar 
+ID: 788 Track Name: Un Verano Sin Ti Artist Name: Bad Bunny 
+ID: 789 Track Name: ULTRA SOLO Artist Name: "Polima WestCoast 
+ID: 790 Track Name: Ens����ame  Artist Name: Bad Bunny 
+ID: 791 Track Name: El Apag� Artist Name: Bad Bunny 
+ID: 792 Track Name: Callaita Artist Name: "Bad Bunny 
+ID: 793 Track Name: Dua Lipa Artist Name: Jack Harlow 
+ID: 794 Track Name: Agosto Artist Name: Bad Bunny 
+ID: 795 Track Name: House Of Memories Artist Name: Panic! At The Disco 
+ID: 796 Track Name: Mr. Morale Artist Name: "Kendrick Lamar 
+ID: 797 Track Name: That That (prod. & feat. SUGA of BTS) Artist Name: "PSY 
+ID: 798 Track Name: In The Stars Artist Name: Benson Boone 
+ID: 799 Track Name: Rich - Interlude Artist Name: Kendrick Lamar 
+ID: 800 Track Name: SUPERMODEL Artist Name: M��ne 
+ID: 801 Track Name: Stefania (Kalush Orchestra) Artist Name: KALUSH 
+ID: 802 Track Name: Thousand Miles Artist Name: The Kid Laroi 
+ID: 803 Track Name: Crown Artist Name: Kendrick Lamar 
+ID: 804 Track Name: Auntie Diaries Artist Name: Kendrick Lamar 
+ID: 805 Track Name: PUFFIN ON ZOOTIEZ Artist Name: Future 
+ID: 806 Track Name: Mirror Artist Name: Kendrick Lamar 
+ID: 807 Track Name: Beautiful Girl Artist Name: Luciano 
+ID: 808 Track Name: "Paulo Londra: Bzrp Music Sessions Artist Name:  Vol. 23" 
+ID: 809 Track Name: Savior - Interlude Artist Name: Kendrick Lamar 
+ID: 810 Track Name: Pasoori Artist Name: "Shae Gill 
+ID: 811 Track Name: Mother I Sober (feat. Beth Gibbons of Portishead) Artist Name: "Kendrick Lamar 
+ID: 812 Track Name: TUS L��GR Artist Name: "Sech 
+ID: 813 Track Name: Where Did You Go? Artist Name: "MNEK 
+ID: 814 Track Name: I Tried to Tell Y'all Artist Name: "Ugly Dray 
+ID: 815 Track Name: Honest (feat. Don Toliver) Artist Name: "Justin Bieber 
+ID: 816 Track Name: ZOOM Artist Name: Jessi 
+ID: 817 Track Name: SloMo Artist Name: Chanel 
+ID: 818 Track Name: FEARLESS Artist Name: LE SSERAFIM 
+ID: 819 Track Name: 10 Things I Hate About You Artist Name: Leah Kate 
+ID: 820 Track Name: SPACE MAN Artist Name: Sam Ryder 
+ID: 821 Track Name: With you Artist Name: "HA SUNG WOON 
+ID: 822 Track Name: Iris Artist Name: The Goo Goo Dolls 
+ID: 823 Track Name: The Heart Part 5 Artist Name: Kendrick Lamar 
+ID: 824 Track Name: San Lucas Artist Name: Kevin Kaarl 
+ID: 825 Track Name: This Love (Taylor���s Ve Artist Name: Taylor Swift 
+ID: 826 Track Name: Good Looking Artist Name: Suki Waterhouse 
+ID: 827 Track Name: Flowers Artist Name: Lauren Spencer Smith 
+ID: 828 Track Name: Yet To Come Artist Name: BTS 
+ID: 829 Track Name: Run BTS Artist Name: BTS 
+ID: 830 Track Name: Music For a Sushi Restaurant Artist Name: Harry Styles 
+ID: 831 Track Name: Matilda Artist Name: Harry Styles 
+ID: 832 Track Name: For Youth Artist Name: BTS 
+ID: 833 Track Name: Daylight Artist Name: Harry Styles 
+ID: 834 Track Name: Vegas (From the Original Motion Picture Soundtrack ELVIS) Artist Name: Doja Cat 
+ID: 835 Track Name: Cash In Cash Out Artist Name: "Pharrell Williams 
+ID: 836 Track Name: Potion (with Dua Lipa & Young Thug) Artist Name: "Calvin Harris 
+ID: 837 Track Name: Born Singer Artist Name: BTS 
+ID: 838 Track Name: Little Freak Artist Name: Harry Styles 
+ID: 839 Track Name: La Llevo Al Cielo (Ft. ��engo F Artist Name: "Nengo Flow 
+ID: 840 Track Name: True Love Artist Name: "Kanye West 
+ID: 841 Track Name: Satellite Artist Name: Harry Styles 
+ID: 842 Track Name: Pass The Dutchie Artist Name: Musical Youth 
+ID: 843 Track Name: "Villano Antillano: Bzrp Music Sessions Artist Name:  Vol. 51" 
+ID: 844 Track Name: Love Of My Life Artist Name: Harry Styles 
+ID: 845 Track Name: Grapejuice Artist Name: Harry Styles 
+ID: 846 Track Name: So Good Artist Name: Halsey 
+ID: 847 Track Name: Belly Dancer Artist Name: "BYOR 
+ID: 848 Track Name: Keep Driving Artist Name: Harry Styles 
+ID: 849 Track Name: Cinema Artist Name: Harry Styles 
+ID: 850 Track Name: Die Young (feat. 347aidan) Artist Name: "Sleepy hallow 
+ID: 851 Track Name: Only Love Can Hurt Like This Artist Name: Paloma Faith 
+ID: 852 Track Name: Hold My Hand Artist Name: Lady Gaga 
+ID: 853 Track Name: Daydreaming Artist Name: Harry Styles 
+ID: 854 Track Name: Numb Artist Name: "Marshmello 
+ID: 855 Track Name: Nos Comemos (feat. Ozuna) Artist Name: "Ozuna 
+ID: 856 Track Name: Me and Your Mama Artist Name: Childish Gambino 
+ID: 857 Track Name: Crazy What Love Can Do Artist Name: "David Guetta 
+ID: 858 Track Name: SLOW DANCING IN THE DARK Artist Name: Joji 
+ID: 859 Track Name: Antes de Perderte Artist Name: Duki 
+ID: 860 Track Name: Boyfriends Artist Name: Harry Styles 
+ID: 861 Track Name: 295 Artist Name: Sidhu Moose Wala 
+ID: 862 Track Name: Tak Ingin Usai Artist Name: Keisya Levronka 
+ID: 863 Track Name: En El Radio Un Cochinero Artist Name: Victor Cibrian 
+ID: 864 Track Name: Master of Puppets (Remastered) Artist Name: Metallica 
+ID: 865 Track Name: BREAK MY SOUL Artist Name: Beyonc� 
+ID: 866 Track Name: ULTRA SOLO REMIX Artist Name: "De La Ghetto 
+ID: 867 Track Name: Massive Artist Name: Drake 
+ID: 868 Track Name: Betty (Get Money) Artist Name: Yung Gravy 
+ID: 869 Track Name: Ojos Marrones Artist Name: Lasso 
+ID: 870 Track Name: POP! Artist Name: Nayeon 
+ID: 871 Track Name: Layla Artist Name: "Sch��rze 
+ID: 872 Track Name: MORE Artist Name: j-hope 
+ID: 873 Track Name: Sweet Child O' Mine Artist Name: Guns N' Roses 
+ID: 874 Track Name: Last Last Artist Name: Burna Boy 
+ID: 875 Track Name: SNAP Artist Name: Rosa Linn 
+ID: 876 Track Name: Sticky Artist Name: Drake 
+ID: 877 Track Name: Hot Shit (feat. Ye & Lil Durk) Artist Name: "Kanye West 
+ID: 878 Track Name: Ai Preto Artist Name: "L7nnon 
+ID: 879 Track Name: La Loto Artist Name: "Anitta 
+ID: 880 Track Name: die first Artist Name: Nessa Barrett 
+ID: 881 Track Name: Afraid To Feel Artist Name: LF System 
+ID: 882 Track Name: Baile no Morro Artist Name: "Mc Vitin Da Igrejinha 
+ID: 883 Track Name: c��mo dormi Artist Name: Rels B 
+ID: 884 Track Name: Bad Decisions (with BTS & Snoop Dogg) Artist Name: "Snoop Dogg 
+ID: 885 Track Name: STAYING ALIVE (feat. Drake & Lil Baby) Artist Name: "Drake 
+ID: 886 Track Name: Caile Artist Name: Luar La L 
+ID: 887 Track Name: Si Te La Encuentras Por Ah� Artist Name: Feid 
+ID: 888 Track Name: GIVENCHY Artist Name: Duki 
+ID: 889 Track Name: ALIEN SUPERSTAR Artist Name: Beyonc� 
+ID: 890 Track Name: Mary On A Cross Artist Name: Ghost 
+ID: 891 Track Name: Attention Artist Name: NewJeans 
+ID: 892 Track Name: THE SHADE Artist Name: Rex Orange County 
+ID: 893 Track Name: "Come Back Home - From ""Purple Hearts""" Artist Name: Sofia Carson 
+ID: 894 Track Name: El Rescate Artist Name: "Grupo Marca Registrada 
+ID: 895 Track Name: Heartless Artist Name: Kanye West 
+ID: 896 Track Name: "Stay With Me (with Justin Timberlake Artist Name:  Halsey 
+ID: 897 Track Name: Siempre Pendientes Artist Name: "Peso Pluma 
+ID: 898 Track Name: JGL Artist Name: "Luis R Conriquez 
+ID: 899 Track Name: Don't You Worry Artist Name: "David Guetta 
+ID: 900 Track Name: Pipoco Artist Name: "Melody 
+ID: 901 Track Name: Hold Me Closer Artist Name: "Elton John 
+ID: 902 Track Name: Forget Me Artist Name: Lewis Capaldi 
+ID: 903 Track Name: After LIKE Artist Name: IVE 
+ID: 904 Track Name: Bound 2 Artist Name: Kanye West 
+ID: 905 Track Name: B.O.T.A. (Baddest Of Them All) - Edit Artist Name: "Interplanetary Criminal 
+ID: 906 Track Name: Talk that Talk Artist Name: TWICE 
+ID: 907 Track Name: BILLIE EILISH. Artist Name: Armani White 
+ID: 908 Track Name: Ferxxo 100 Artist Name: Feid 
+ID: 909 Track Name: KU LO SA - A COLORS SHOW Artist Name: Oxlade 
+ID: 910 Track Name: Prohibidox Artist Name: Feid 
+ID: 911 Track Name: Static Artist Name: Steve Lacy 
+ID: 912 Track Name: The Scientist Artist Name: Coldplay 
+ID: 913 Track Name: Sparks Artist Name: Coldplay 
+ID: 914 Track Name: Talk Artist Name: YEAT 
+ID: 915 Track Name: XQ Te Pones As� Artist Name: "Yandel 
+ID: 916 Track Name: Selfish Artist Name: PnB Rock 
+ID: 917 Track Name: Sin Se�� Artist Name: "Ovy On The Drums 
+ID: 918 Track Name: Lady Mi Amor Artist Name: Feid 
+ID: 919 Track Name: Poland Artist Name: Lil Yachty 
+ID: 920 Track Name: THE LONELIEST Artist Name: M��ne 
+ID: 921 Track Name: Bye Bye Artist Name: "Marshmello 
+ID: 922 Track Name: BABY OTAKU Artist Name: "Fran C 
+ID: 923 Track Name: Nxde Artist Name: (G)I-DLE 
+ID: 924 Track Name: Miss You Artist Name: Southstar 
+ID: 925 Track Name: we fell in love in october Artist Name: girl in red 
+ID: 926 Track Name: 2 Be Loved (Am I Ready) Artist Name: Lizzo 
+ID: 927 Track Name: Celestial Artist Name: Ed Sheeran 
+ID: 928 Track Name: Typa Girl Artist Name: BLACKPINK 
+ID: 929 Track Name: I Really Want to Stay at Your House Artist Name: "Rosa Walton 
+ID: 930 Track Name: California Breeze Artist Name: Lil Baby 
+ID: 931 Track Name: Bamba (feat. Aitch & BIA) Artist Name: "Luciano 
+ID: 932 Track Name: Casei Com a Putaria Artist Name: "MC Ryan SP 
+ID: 933 Track Name: Major Distribution Artist Name: "Drake 
+ID: 934 Track Name: Pussy & Millions (feat. Travis Scott) Artist Name: "Drake 
+ID: 935 Track Name: Vigilante Shit Artist Name: Taylor Swift 
+ID: 936 Track Name: Question...? Artist Name: Taylor Swift 
+ID: 937 Track Name: On BS Artist Name: "Drake 
+ID: 938 Track Name: Mastermind Artist Name: Taylor Swift 
+ID: 939 Track Name: Circo Loco Artist Name: "Drake 
+ID: 940 Track Name: Labyrinth Artist Name: Taylor Swift 
+ID: 941 Track Name: Spin Bout U Artist Name: "Drake 
+ID: 942 Track Name: Sweet Nothing Artist Name: Taylor Swift 
+ID: 943 Track Name: "Would've Artist Name:  Could've 
+ID: 944 Track Name: Con La Brisa Artist Name: "Ludwig Goransson 
+ID: 945 Track Name: Privileged Rappers Artist Name: "Drake 
+ID: 946 Track Name: The Astronaut Artist Name: Jin 
+ID: 947 Track Name: BackOutsideBoyz Artist Name: Drake 
+ID: 948 Track Name: Broke Boys Artist Name: "Drake 
+ID: 949 Track Name: The Great War Artist Name: Taylor Swift 
+ID: 950 Track Name: My Mind & Me Artist Name: Selena Gomez 
+ID: 951 Track Name: Bigger Than The Whole Sky Artist Name: Taylor Swift 
+ID: 952 Track Name: A Veces (feat. Feid) Artist Name: "Feid 
+ID: 953 Track Name: En La De Ella Artist Name: "Feid 
+ID: 954 Track Name: Alone Artist Name: Burna Boy 
+Most common value in danceability in SPOTIFY_TABLE
+isdanceability ::  Major 
+Total Number of Songs with a give key :: 125 :: 9
+Total Number of Songs :: 954
+]]></system-out>
+  </testcase>
+</testsuite>
