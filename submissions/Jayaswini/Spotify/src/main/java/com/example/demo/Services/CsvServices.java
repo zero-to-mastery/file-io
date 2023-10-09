@@ -27,7 +27,7 @@ public class CsvServices {
 	
 	public void CsvParseData() throws FileNotFoundException {
 	
-	try (Scanner scanner = new Scanner(new File("src\\main\\resources\\spotify-2023.csv"))) {
+	try (Scanner scanner = new Scanner(new File("src/main/resources/spotify-2023.csv"))) {
 	    while (scanner.hasNextLine()) {
 	        records.add(getRecordFromLine(scanner.nextLine()));
 	    }
