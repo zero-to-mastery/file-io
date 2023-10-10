@@ -11,8 +11,6 @@ def main():
             if row["key"] == "E": # count number of songs in E key
                 in_e_key += 1
             for artist_name in row["artist(s)_name"].split(","): # split artists name and add them to dictionary
-                if artist_name == "Taylor Swift":
-                    print(row["track_name"])
                 artist_name = artist_name.strip()
                 song_per_artist[artist_name] = song_per_artist.get(artist_name, 0) + 1
             song_amount += 1
