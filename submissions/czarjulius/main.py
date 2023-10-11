@@ -41,7 +41,7 @@ def spotify_data_analyzer(csv_file_path, options={}):
     }
     return result
 
-csv_file_path = os.path.join(os.path.dirname(__file__), '../spotify-2023.csv')
+csv_file_path = os.path.join(os.path.dirname(__file__), 'spotify-2023.csv')
 
 options = {
     'key': 'E',
