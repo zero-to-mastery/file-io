@@ -1,0 +1,42 @@
+/* Import and use the Inter font https://rsms.me/inter/ */
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 2em;
+  font-family: "Inter var", sans-serif;
+  font-size: 16px;
+  color: hsl(210deg 29% 29%);
+  background: hsl(210deg 17% 98%);
+}
+
+h1 {
+  text-align: center;
+}
+
+.top-count {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+#challenge-3-result {
+  border-collapse: collapse;
+}
+
+#challenge-3-result th,
+#challenge-3-result td {
+  border: 1px solid hsl(210deg 29% 29%);
+  padding: 8px;
+}
+
+#challenge-3-result th {
+  padding-block: 12px;
+  font-weight: bold;
+  background-color: hsl(210deg 29% 29%);
+  color: hsl(210deg 17% 98%);
+  text-align: left;
+}
