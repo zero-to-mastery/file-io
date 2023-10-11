@@ -34,7 +34,7 @@ Before adapting this project to your chosen programming language, ensure that yo
 - The CSV file (spotify-2023.csv) containing Spotify data that you want to analyze. Make sure to adjust the filename and path as needed.
 - The script that will run your file to output the results.
 
-**Note: Projects that include frameworks will not be accepted. It must be a script that can be executed from the command line.**
+**Note: Projects that include frameworks will not be accepted. Your project must be a script that can be executed from the command line.**
 
 <h2 id="getting-started">Getting Started</h2>
 The usage instructions will vary depending on your chosen programming language. Below are the general steps to adapt this project:
