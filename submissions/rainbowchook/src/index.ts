@@ -1,4 +1,4 @@
-import fs from 'node:fs'
+import { CSVFileReader } from "./CSVFileReader"
 
 type RowItem = {
   [key: string]: string
@@ -7,61 +7,6 @@ type RowItem = {
 type ValuesArrayType = {
   value: string
   count: number
-}
-
-const loadData = (): RowItem[] | null => {
-  try {
-    // Load data from CSV file and split into rows by new line into an array of strings
-    const csvData = fs
-      .readFileSync('spotify-2023.csv', {
-        encoding: 'utf-8',
-      })
-      .split('\n')
-
-    console.log(`Number of lines of pre-cleaned CSV file is ${csvData.length}`)
-    if (!csvData || csvData.length <= 0) throw new Error('No data found')
-
-    // Clean up data: If there are empty lines, remove them
-    const csvDataWithoutEmptyLines = csvData.filter(
-      (row: string) => row.length > 0
-    )
-
-    // Parse each string row into an array of strings, split by commas that are not enclosed between double quotes
-    const csvDataParsed = csvDataWithoutEmptyLines.map(
-      (row: string): string[] => {
-        const re = /,(?=(?:[^"]*"[^"]*")*[^"]*$)/
-        const splitRow = row.split(re)
-        return splitRow
-      }
-    )
-
-    // Remove first row of column names/headers
-    const headers: string[] = csvDataParsed.shift()!
-
-    // Each row is mapped from an array of strings into an object, pairing corresponding column names/headers to values as key-value pairs.
-    const csvDataMapped = csvDataParsed.map((row: string[], i: number) => {
-      let returnObject: RowItem = {}
-      // if(i === (csvDataParsed.length - 1)) {
-      //   console.log(row)
-      // }
-      for (let j = 0; j < headers.length; j++) {
-        // if(row[j] === '') {
-        //   console.log([i, row[0], j, headers[j], row[j]])
-        // }
-        returnObject[headers[j]] = row[j]
-      }
-      return returnObject
-    })
-
-    // console.log('tracks: ')
-    // console.log(headers)
-    // console.log(csvDataMapped[24].length)
-    // console.log(csvDataMapped[24])
-
-    return csvDataMapped
-  } catch (error) {
-    return null
-  }
 }
 
 const countRows = (rows: RowItem[]): number => {
@@ -165,7 +110,10 @@ const maxColumnValue = (
 */
 
 //Reporting
-const tracks = loadData()
+const reader = new CSVFileReader('spotify-2023.csv')
+reader.read()
+const tracks = reader.data
+const trackHeaders = reader.headers
 const trackCount = tracks ? countRows(tracks) : 0
 const songsInKeyOfECount = tracks ? countMatchingRows('key', 'E', tracks) : 0
 
@@ -191,4 +139,4 @@ const reportColValueCount = (col: string): void => {
   }
 }
 
-reportColValueCount('speechiness_%')
+reportColValueCount(trackHeaders[6])
