@@ -23,12 +23,19 @@ export class CSVFileReader implements DataReader{
 
       // Clean up data: If there are empty lines, remove them
       // Parse each string row into an array of strings, split by commas that are not enclosed between double quotes
+      // Each element in a row will be further parsed - iterate over each part of the resulting split row and replace the entire match within the captured content
       const csvDataParsed = csvData
         .filter((row: string) => row.length > 0)
         .map((row: string): string[] => {
           const re = /,(?=(?:[^"]*"[^"]*")*[^"]*$)/
-          const splitRow = row.split(re)
-          return splitRow
+          const splitRow: string[] = row.split(re)
+          // console.log(splitRow)
+          return splitRow.map((col: string): string => {
+            // console.log(col)
+            const result = col.replace(/^"(.*)"$/, '$1')
+            if(col.match(/^"(.*)"$/)) { console.log(result) }
+            return result
+          })
         })
         
       // Remove first row of column names/headers if hasHeaders === true

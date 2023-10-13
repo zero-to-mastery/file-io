@@ -4,6 +4,7 @@ import { CountAnalyser } from './lib/analysers/CountAnalyser'
 import { SongsInKeyOfECount } from './lib/analysers/SongsInKeyOfEAnalyser'
 import { CountMaxColumnValueReporter } from './lib/analysers/CountMaxColumnValueReporter'
 import { ConsoleReport } from './lib/reporters/ConsoleReporter'
+import { ReportGenerator } from './lib/ReportGenerator.ts/ReportGenerator'
 
 // Load -> Parse -> Analyse -> Report
 
@@ -154,4 +155,8 @@ const consoleReporter = new ConsoleReport()
 // consoleReporter.print(new SongsInKeyOfECount().run(tracks))
 // consoleReporter.print(new CountMaxColumnValueReporter(trackHeaders[17]).run(tracks))
 
-consoleReporter.print(new CountAnalyser().run(tracks) + new SongsInKeyOfECount().run(tracks) + new CountMaxColumnValueReporter(trackHeaders[17]).run(tracks))
+// consoleReporter.print(new CountAnalyser().run(tracks) + new SongsInKeyOfECount().run(tracks) + new CountMaxColumnValueReporter(trackHeaders[17]).run(tracks))
+
+new ReportGenerator(new CountAnalyser(), new ConsoleReport()).buildAndPrintAnalysisReport(tracks)
+new ReportGenerator(new SongsInKeyOfECount(), new ConsoleReport()).buildAndPrintAnalysisReport(tracks)
+new ReportGenerator(new CountMaxColumnValueReporter(trackHeaders[1]), new ConsoleReport()).buildAndPrintAnalysisReport(tracks)
