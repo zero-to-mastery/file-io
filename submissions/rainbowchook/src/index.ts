@@ -1,8 +1,8 @@
-import { CSVFileReader } from "./CSVFileReader"
+import { TrackReader } from './TrackReader'
+import { CSVFileReader } from './CSVFileReader'
+import { RowItem } from './RowItem'
 
-type RowItem = {
-  [key: string]: string
-}
+// Load -> Parse -> Analyse -> Report
 
 type ValuesArrayType = {
   value: string
@@ -91,7 +91,6 @@ const maxColumnValue = (
       return a.count === b.count ? 0 : a.count > b.count ? 1 : -1
     }
   )
-
   //Get largest count
   const maxCount = uniqueColValuesArray[uniqueColValuesArray.length - 1].count
 
@@ -109,10 +108,10 @@ const maxColumnValue = (
   3. Count the occurrences of values in a specified column (e.g., artist names) and determine the most common value.
 */
 
-//Reporting
-const reader = new CSVFileReader('spotify-2023.csv')
-reader.read()
-const tracks = reader.data
+//Reporting = Analyser + Reporter
+const reader = new TrackReader(new CSVFileReader('spotify-2023.csv'))
+reader.load()
+const tracks = reader.tracks
 const trackHeaders = reader.headers
 const trackCount = tracks ? countRows(tracks) : 0
 const songsInKeyOfECount = tracks ? countMatchingRows('key', 'E', tracks) : 0
@@ -139,4 +138,4 @@ const reportColValueCount = (col: string): void => {
   }
 }
 
-reportColValueCount(trackHeaders[6])
+reportColValueCount(trackHeaders[10])
