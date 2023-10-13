@@ -1,10 +1,15 @@
 import { DataReader } from './DataReader'
-import type { RowItem } from './RowItem'
+import { CSVFileReader } from './CSVFileReader'
+import type { RowItem } from '../RowItem'
 
 export class TrackReader {
   tracks: RowItem[] = []
   headers: string[] = []
   constructor(public reader: DataReader) {}
+
+  static withCSV(filename: string) {
+    return new TrackReader(new CSVFileReader('spotify-2023.csv'))
+  }
 
   // loads headers if any; otherwise headers are extracted from first line of CSV file
   load(headers?: string[]) {

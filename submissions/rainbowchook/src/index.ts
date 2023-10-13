@@ -1,6 +1,5 @@
-import { TrackReader } from './TrackReader'
-import { CSVFileReader } from './CSVFileReader'
-import { RowItem } from './RowItem'
+import { TrackReader } from './lib/readers/TrackReader'
+import { RowItem } from './lib/RowItem'
 
 // Load -> Parse -> Analyse -> Report
 
@@ -109,7 +108,8 @@ const maxColumnValue = (
 */
 
 //Reporting = Analyser + Reporter
-const reader = new TrackReader(new CSVFileReader('spotify-2023.csv'))
+// const reader = new TrackReader(new CSVFileReader('spotify-2023.csv'))
+const reader = TrackReader.withCSV('spotify-2023.csv')
 reader.load()
 const tracks = reader.tracks
 const trackHeaders = reader.headers
