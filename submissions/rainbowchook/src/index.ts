@@ -1,5 +1,9 @@
 import { TrackReader } from './lib/readers/TrackReader'
-import { RowItem } from './lib/RowItem'
+import { RowItem } from './lib/readers/RowItem'
+import { CountAnalyser } from './lib/analysers/CountAnalyser'
+import { SongsInKeyOfECount } from './lib/analysers/SongsInKeyOfEAnalyser'
+import { CountMaxColumnValueReporter } from './lib/analysers/CountMaxColumnValueReporter'
+import { ConsoleReport } from './lib/reporters/ConsoleReporter'
 
 // Load -> Parse -> Analyse -> Report
 
@@ -138,4 +142,16 @@ const reportColValueCount = (col: string): void => {
   }
 }
 
-reportColValueCount(trackHeaders[10])
+// reportColValueCount(trackHeaders[1])
+
+// console.log(new CountAnalyser().run(tracks))
+// console.log(new SongsInKeyOfECount().run(tracks))
+// console.log(trackHeaders)
+// console.log(new CountMaxColumnValueReporter(trackHeaders[17]).run(tracks))
+
+const consoleReporter = new ConsoleReport()
+// consoleReporter.print(new CountAnalyser().run(tracks))
+// consoleReporter.print(new SongsInKeyOfECount().run(tracks))
+// consoleReporter.print(new CountMaxColumnValueReporter(trackHeaders[17]).run(tracks))
+
+consoleReporter.print(new CountAnalyser().run(tracks) + new SongsInKeyOfECount().run(tracks) + new CountMaxColumnValueReporter(trackHeaders[17]).run(tracks))

@@ -1,6 +1,6 @@
 import { DataReader } from './DataReader'
 import { CSVFileReader } from './CSVFileReader'
-import type { RowItem } from '../RowItem'
+import type { RowItem } from './RowItem'
 
 export class TrackReader {
   tracks: RowItem[] = []
@@ -25,5 +25,6 @@ export class TrackReader {
           return returnObject
         })
       : []
+    this.headers = headers ? headers : this.reader.headers
   }
 }
