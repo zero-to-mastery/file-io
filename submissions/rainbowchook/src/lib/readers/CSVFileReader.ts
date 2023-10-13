@@ -29,11 +29,8 @@ export class CSVFileReader implements DataReader{
         .map((row: string): string[] => {
           const re = /,(?=(?:[^"]*"[^"]*")*[^"]*$)/
           const splitRow: string[] = row.split(re)
-          // console.log(splitRow)
           return splitRow.map((col: string): string => {
-            // console.log(col)
             const result = col.replace(/^"(.*)"$/, '$1')
-            if(col.match(/^"(.*)"$/)) { console.log(result) }
             return result
           })
         })
