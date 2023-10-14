@@ -20,6 +20,6 @@ export class ColumnValueCount implements Analyser<RowItem> {
   
   run(tracks: RowItem[]) {
     const count = tracks ? this.countMatchingRows(this.column, this.value, tracks) : 0
-    return `The number of songs in column "${this.column}" with value "${this.value}" is ${count}.\n`
+    return `The number of songs in column "${this.column}" with value "${this.value}" is ${count}.`
   }
 }

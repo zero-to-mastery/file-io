@@ -3,6 +3,8 @@ import { CountAnalyser } from './lib/analysers/CountAnalyser'
 import { ColumnValueCount } from './lib/analysers/ColumnValueCount'
 import { CountMaxColumnValueReporter } from './lib/analysers/CountMaxColumnValueReporter'
 import { ReportGenerator } from './lib/ReportGenerator.ts/ReportGenerator'
+import { Analyser } from './lib/analysers/Analyser'
+import { RowItem } from './lib/readers/RowItem'
 
 // Load -> Parse -> Analyse -> Report
 
@@ -43,6 +45,21 @@ const trackHeaders = reader.headers
 // new ReportGenerator(new SongsInKeyOfECount(), new ConsoleReport()).buildAndPrintAnalysisReport(tracks)
 // new ReportGenerator(new CountMaxColumnValueReporter(trackHeaders[1]), new ConsoleReport()).buildAndPrintAnalysisReport(tracks)
 
-ReportGenerator.forConsole(new CountAnalyser()).buildAndPrintAnalysisReport(tracks)
-ReportGenerator.forConsole(new ColumnValueCount('key', 'G')).buildAndPrintAnalysisReport(tracks)
-ReportGenerator.forConsole(new CountMaxColumnValueReporter(trackHeaders[16])).buildAndPrintAnalysisReport(tracks)
+const analysers: Analyser<RowItem>[] = [
+  new CountAnalyser(),
+  new ColumnValueCount('key', 'E'),
+  new CountMaxColumnValueReporter(trackHeaders[1]),
+]
+
+for (let analyser of analysers) {
+  ReportGenerator.forConsole(analyser).buildAndPrintAnalysisReport(tracks)
+  ReportGenerator.forHTML(analyser).buildAndPrintAnalysisReport(tracks)
+}
+
+// ReportGenerator.forConsole(new CountAnalyser()).buildAndPrintAnalysisReport(tracks)
+// ReportGenerator.forConsole(new ColumnValueCount('key', 'G')).buildAndPrintAnalysisReport(tracks)
+// ReportGenerator.forConsole(new CountMaxColumnValueReporter(trackHeaders[16])).buildAndPrintAnalysisReport(tracks)
+
+// ReportGenerator.forHTML(new CountAnalyser()).buildAndPrintAnalysisReport(tracks)
+// ReportGenerator.forHTML(new ColumnValueCount('key', 'G')).buildAndPrintAnalysisReport(tracks)
+// ReportGenerator.forHTML(new CountMaxColumnValueReporter(trackHeaders[16])).buildAndPrintAnalysisReport(tracks)

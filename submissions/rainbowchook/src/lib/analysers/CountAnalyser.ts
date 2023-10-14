@@ -10,7 +10,7 @@ export class CountAnalyser implements Analyser<RowItem> {
 
   run(tracks: RowItem[]): string {
     const trackCount = tracks ? this.countRows(tracks) : 0
-    return `The number of songs in the file is ${trackCount}.\n`
+    return `The number of songs in the file is ${trackCount}.`
   }
 
 }

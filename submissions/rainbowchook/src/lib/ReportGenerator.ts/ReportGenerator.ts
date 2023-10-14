@@ -4,7 +4,6 @@ import { Reporter } from '../reporters/Reporter'
 import { ConsoleReport } from '../reporters/ConsoleReporter'
 import { HTMLReporter } from '../reporters/HTMLReporter'
 
-
 export class ReportGenerator {
   constructor(public analyser: Analyser<RowItem>, public reporter: Reporter) {}
 
