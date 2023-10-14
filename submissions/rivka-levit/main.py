@@ -1,6 +1,6 @@
-from countings import CsvCounter
+from countings.csv_counter import CsvCounter
 
-counter = CsvCounter('spotify-2023.csv')
+counter = CsvCounter('data/spotify-2023.csv')
 artist, qty = counter.get_most_frequent_value('artist(s)_name')
 
 print(f'There are {counter.count_length("track_name")} songs in this list.')
