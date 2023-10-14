@@ -1,18 +1,22 @@
 import pandas as pd
 
 
-class SpotifyPlayList:
-    """Manage operations with play list."""
+class CsvCounter:
+    """Calculations in .csv file."""
 
     def __init__(self, filepath):
         self.df = pd.read_csv(filepath)
 
-    def get_songs_quantity(self) -> int:
+    def count_length(self, column_name: str = None) -> int:
         """Return quantity of songs in the play list."""
+
+        if column_name:
+            column_data = self.df.loc[:, column_name]
+            return len(column_data)
 
         return len(self.df)
 
-    def get_value_count(self, column_name: str, value: str) -> int:
+    def count_value_frequency(self, column_name: str, value: str) -> int:
         """Return number of occurrences of the value in the column."""
 
         column_data = self.df.loc[:, column_name]
@@ -31,12 +35,12 @@ class SpotifyPlayList:
         return max_value, max_value_count
 
 
-playlist = SpotifyPlayList('spotify-2023.csv')
-artist, qty = playlist.get_most_frequent_value('artist(s)_name')
+counter = CsvCounter('spotify-2023.csv')
+artist, qty = counter.get_most_frequent_value('artist(s)_name')
 
-print(f'There are {playlist.get_songs_quantity()} songs in this list.')
+print(f'There are {counter.count_length("track_name")} songs in this list.')
 
-print(f'There are {playlist.get_value_count("key", "E")} songs '
+print(f'There are {counter.count_value_frequency("key", "E")} songs '
       f'in the key of E.')
 
 print(f'The most popular artist is {artist} with {qty} songs.')
