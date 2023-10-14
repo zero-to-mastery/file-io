@@ -7,7 +7,8 @@ def total_num_of_songs():
     return len(df)
 
 def number_of_songs_in_key(key):
-    with open('spotify-2023.csv', 'r') as file:
+    with open('spotify-2023.csv', 'r'
+    ,encoding='latin1') as file:
         reader = csv.reader(file)
         columns = next(reader)
         #storing the index of element 'key' in index variable
