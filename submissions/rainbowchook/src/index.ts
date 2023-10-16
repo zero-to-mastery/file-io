@@ -2,7 +2,7 @@ import { TrackLoader } from './lib/readers/TrackLoader'
 import { CountAnalyser } from './lib/analysers/CountAnalyser'
 import { ColumnValueCount } from './lib/analysers/ColumnValueCount'
 import { CountMaxColumnValueReporter } from './lib/analysers/CountMaxColumnValueReporter'
-import { ReportGenerator } from './lib/ReportGenerator.ts/ReportGenerator'
+import { ReportGenerator } from './lib/ReportGenerator/ReportGenerator'
 import { Analyser } from './lib/analysers/Analyser'
 import { RowItem } from './lib/readers/RowItem'
 
