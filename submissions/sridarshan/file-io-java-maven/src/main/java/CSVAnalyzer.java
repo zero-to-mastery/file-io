@@ -31,7 +31,6 @@ public class CSVAnalyzer {
         } catch (IOException ioException) {
             System.out.println("Error in reading CSV File");
         } catch (Exception e) {
-            System.out.println(e);
             System.out.println("Sorry something went wrong. Please try again later");
         }
     }
