@@ -1,57 +1,60 @@
-extern crate csv;
-
 use std::collections::HashMap;
+use std::env;
 use std::error::Error;
+use std::fs;
 use std::fs::File;
+use std::path::PathBuf;
+use std::process;
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let file_path = "../../spotify-2023.csv";
+    let mut total_songs_in_key: HashMap<String, i32> = HashMap::new();
+    let mut total_songs = 0;
+    let mut total_songs_in_e = 0;
 
-    let file = File::open(file_path)?;
-
-    // Create a CSV reader
-    let mut rdr = csv::Reader::from_reader(file);
-
-    // Task 1: Number of songs in the file
-    let num_songs = rdr.records().count();
-
-    // Reopen the CSV file to create a new reader
-    let file = File::open(file_path)?;
-    let mut rdr = csv::Reader::from_reader(file);
-
-    // Task 2: Number of songs in the key of E
-    let num_songs_in_key_e = rdr
-        .records()
-        .filter_map(|record| record.ok())
-        .filter(|record| record.get("key") == Some("E"))
-        .count();
-
-    // Reopen the CSV file to create a new reader
-    let file = File::open(file_path)?;
-    let rdr = csv::Reader::from_reader(file);
-
-    // Task 3: Count occurrences of artist name(s) and determine the most common value
-    let mut artist_counts = HashMap::new();
-
-    for result in rdr.records() {
-        let record = result?;
-        if let Some(artist) = record.get("artist(s)_name") {
-            *artist_counts.entry(artist.to_string()).or_insert(0) += 1;
-        }
+    let args: Vec<String> = env::args().collect();
+    if args.len() != 2 {
+        eprintln!("Usage: cargo run <file path to csv>");
+        process::exit(1);
     }
 
-    let (most_common_artist, most_common_artist_count) = artist_counts
-        .iter()
-        .max_by_key(|&(_, count)| count)
-        .unwrap();
+    let file_path_str = &args[1];
+    let file = fs::canonicalize(PathBuf::from(&file_path_str))?;
+    let file_data = File::open(&file)?;
 
-    // Outputs
-    println!("Total number of songs in the file: {}", num_songs);
-    println!("Number of songs in the key of E: {}", num_songs_in_key_e);
-    println!(
-        "Most common artist: {}, Occurrences: {}",
-        most_common_artist, most_common_artist_count
-    );
+    let mut csv_rdr = csv::Reader::from_reader(file_data);
+    for row in csv_rdr.records() {
+        let data = match row {
+            Ok(data) => data,
+            Err(_) => {
+                eprintln!("Error reading row data.");
+                process::exit(4);
+            }
+        };
+
+        total_songs += 1;
+
+        let key = data.get(15).unwrap_or_default().to_lowercase();
+        if key == "e" {
+            total_songs_in_e += 1;
+        }
+
+        *total_songs_in_key.entry(key.to_owned()).or_insert(0) += 1;
+    }
+
+    println!("Total Songs: {}", total_songs);
+    println!("Total Songs in key E: {}", total_songs_in_e);
+    println!("Total Songs in each key:");
+
+    let mut no_key_total = 0;
+    println!("--------------------");
+    for (key, total) in &total_songs_in_key {
+        if !key.is_empty() {
+            println!("{0: <10} : {1: <10}", key, total);
+        } else {
+            no_key_total = *total;
+        }
+    }
+    println!("{0: <10} : {1: <10}", "No Key", no_key_total);
 
     Ok(())
 }
