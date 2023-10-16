@@ -37,10 +37,6 @@ export class CSVFileReader implements DataReader{
         
       // Remove first row of column names/headers if hasHeaders === true
       this.headers = typeof(headers) !== 'undefined' ? headers : csvDataParsed.shift() as string[]
-      // console.log('headers: ', this.headers)
-      // Each row is mapped from an array of strings into an object, pairing corresponding column names/headers to values as key-value pairs.
-      // const csvDataMapped = csvDataParsed.map(this.mapRow)
-      // this.data = csvDataMapped
       this.data = csvDataParsed
     } catch (error) {
       console.error(error)

@@ -25,24 +25,7 @@ export class HTMLReporter implements Reporter {
       </body>
       </html>
     `
-    /*
-
-        ${newReport.map((row: string) => {
-          if (row.length) return `<p>${row}</p>`
-        })}
-        */
-    /*
-    <div>${report.split('\n').map((row: string): string => {
-          const newRow = row.length ? row.replace(/,$/, '') : row
-          return `<p>${newRow}</p>`
-        })}
-          
-        </div>
-        */
-    // .map((row: string): string =>
-    //   '<p>'.concat(row.replace(/,$/, ''), '</p>')
-    // )
-    // }
+    
     fs.writeFileSync(
       `report-${getDate()}${new Date().getUTCMilliseconds()}.html`,
       html
