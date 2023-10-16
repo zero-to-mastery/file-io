@@ -9,10 +9,9 @@ import java.util.List;
 import java.util.Map;
 
 public class CSVAnalyzer {
-    private static final String CSV_FILE = "file-io-java-maven/src/spotify-2023.csv";
     public static void main(String[] args) {
         try {
-            File file = new File(CSV_FILE);
+            File file = new File(args[0]);
             CSVFileParser parser = new CSVFileParser();
             parser.parseCsv(file); // Parse CSV File
             List<String> headers = parser.getHeaders(); // Get headers
@@ -32,6 +31,7 @@ public class CSVAnalyzer {
         } catch (IOException ioException) {
             System.out.println("Error in reading CSV File");
         } catch (Exception e) {
+            System.out.println(e);
             System.out.println("Sorry something went wrong. Please try again later");
         }
     }
