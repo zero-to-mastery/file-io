@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>FileIO</title>
+  </head>
+  <body>
+    <h1>File IO: Create a Spotify Data Logger</h1>
+    <h2>Challenges</h2>
+    <section>
+      <h3>1. Number of songs in the file: <span class="song-count"></span></h3>
+    </section>
+    <section>
+      <h3>
+        2. Number of songs in the key of
+        <select name="keys" id="challenge-2"></select
+        >: <span class="song-key-count"></span>
+      </h3>
+    </section>
+    <section>
+      <h3>
+        3. Sort songs by:
+        <select id="challenge-3-options"></select>
+      </h3>
+      <table id="challenge-3-result"></table>
+    </section>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

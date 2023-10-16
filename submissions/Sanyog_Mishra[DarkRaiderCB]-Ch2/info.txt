@@ -1,0 +1,3 @@
+The code aims to solve Challenge 2 ie. Detecting the total number of songs with key E.
+Code written in Python 3.
+Use of csv module to solve the Challenge.

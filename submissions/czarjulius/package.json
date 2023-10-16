@@ -1,0 +1,19 @@
+{
+  "name": "czarjulius",
+  "version": "1.0.0",
+  "description": "A data processing file I/O script that reads data from a CSV file containing Spotify data and performs some analysis",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npx jest"
+  },
+  "keywords": [],
+  "author": "Julius Ngwu",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

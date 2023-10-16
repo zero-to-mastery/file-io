@@ -1,0 +1,23 @@
+{
+  "name": "file-io-retry",
+  "version": "1.0.0",
+  "description": "Create a data processing file I/O script that reads data from a CSV file containing Spotify data and performs some analysis to complete one or more of the challenges outlined bdlow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barryhanna/file-io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barryhanna/file-io/issues"
+  },
+  "homepage": "https://github.com/barryhanna/file-io#readme",
+  "dependencies": {
+    "csv-parse": "^5.5.1"
+  }
+}
