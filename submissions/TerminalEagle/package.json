@@ -1,0 +1,16 @@
+{
+  "name": "spotify-data-logger",
+  "version": "1.0.0",
+  "description": "Logs the data required by the challenges from the .csv file",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "dev": "nodemon script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TerminalEagle",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
