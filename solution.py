@@ -1,47 +1,26 @@
-# import module
 import pandas as pd
+import matplotlib.pyplot as plt
 
-def count_songs_with_key(data):
-    counts = data['key'].value_counts()['E']
-    return counts
-
-def count_occurences_of_values(data):
-    dict = {}
-    artists = data['artist(s)_name']
-
-    for artist in artists:
-        name = ""
-        for x in artist:
-            if x != ',':
-                name+=x
-            else:
-                name = name.strip()
-                if dict.get(name) == None:
-                    dict[name] = 1
-                else:
-                    dict[name] = dict[name] + 1
-                name=""
-        name = name.strip()
-        if dict.get(name) == None:
-            dict[name] = 1
-        else:
-            dict[name] = dict[name] + 1
-     
-    keyMax = max(zip(dict.values(), dict.keys()))[1]
-    return(keyMax)
-
-# read the csv file
-results = pd.read_csv('spotify-2023.csv')  
+# Read csv file in pandas Dataframe
+spotify = pd.read_csv("spotify-2023.csv", encoding="latin-1")
 
 
-# solution 1
-numOfSongs = len(results)
-print("Number of songs: ", numOfSongs)
+# Number of songs in csv file
+def number_of_songs(spotify):
+    return spotify.shape[0]
 
-# solution 2
-numOfSongsWithE = count_songs_with_key(results)
-print("Number of songs with key E: ", numOfSongsWithE)
 
-# solution 3
-mostOccurences = count_occurences_of_values(results)
-print("Most streamed artist: ", mostOccurences)
+def songs_keye(spotify):
+    return len(spotify[spotify["key"] == "E"])
+
+
+# Find the most common artists in csv file
+def common_track_name(spotify):
+    return spotify["track_name"].mode().tolist()
+
+
+print("The total number of songs in the file: ", number_of_songs(spotify))
+print("The number of songs in the key of 'E': ", songs_keye(spotify))
+print(
+    "The track names occuring more than once in the file:", common_track_name(spotify)
+)
