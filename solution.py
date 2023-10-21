@@ -1,47 +1,29 @@
-# import module
 import pandas as pd
 
-def count_songs_with_key(data):
-    counts = data['key'].value_counts()['E']
-    return counts
+# Reading the csv file
+df = pd.read_csv('spotify-2023.csv')
 
-def count_occurences_of_values(data):
-    dict = {}
-    artists = data['artist(s)_name']
+# Solution 1 function
+def numberOfSongs(data):
+    numberOfSongs = len(data)
+    print('The number of songs is', numberOfSongs, '.' )
 
-    for artist in artists:
-        name = ""
-        for x in artist:
-            if x != ',':
-                name+=x
-            else:
-                name = name.strip()
-                if dict.get(name) == None:
-                    dict[name] = 1
-                else:
-                    dict[name] = dict[name] + 1
-                name=""
-        name = name.strip()
-        if dict.get(name) == None:
-            dict[name] = 1
-        else:
-            dict[name] = dict[name] + 1
-     
-    keyMax = max(zip(dict.values(), dict.keys()))[1]
-    return(keyMax)
+# Solution 2 function
+def countKeyValue (data, column, value):
+    digit = data[column].value_counts()[value]
+    print('The number of', value, 'value is', digit, '.')
 
-# read the csv file
-results = pd.read_csv('spotify-2023.csv')  
+# Solution 3 function
+def topArtist (data, column):
+    digits = data[column].str.split(', ').explode().value_counts()
+    top = digits.idxmax()
+    print('Top artist is', top, '.')
 
+# Solution 1:
+numberOfSongs(df)
 
-# solution 1
-numOfSongs = len(results)
-print("Number of songs: ", numOfSongs)
+# Solution 2:
+countKeyValue(df, 'key', 'E')
 
-# solution 2
-numOfSongsWithE = count_songs_with_key(results)
-print("Number of songs with key E: ", numOfSongsWithE)
-
-# solution 3
-mostOccurences = count_occurences_of_values(results)
-print("Most streamed artist: ", mostOccurences)
+# Solution 3:
+topArtist(df, 'artist(s)_name')
