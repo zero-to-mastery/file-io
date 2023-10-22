@@ -1,0 +1,21 @@
+{
+  "name": "file-io",
+  "version": "1.0.0",
+  "description": "hacktoberfest-2023",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "./node_modules/.bin/ts-node index.ts",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maxie7",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
