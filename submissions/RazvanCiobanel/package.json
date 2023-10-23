@@ -1,0 +1,16 @@
+{
+  "name": "razvanciobanel",
+  "version": "1.0.0",
+  "description": "RazvanCiobanel JS submision",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
