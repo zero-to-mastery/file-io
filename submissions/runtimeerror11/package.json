@@ -1,0 +1,16 @@
+{
+  "name": "csv_pr",
+  "version": "1.0.0",
+  "description": "\"Code for hacktoberfestpr\"",
+  "main": "file.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suparshwa Patil",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security"
+  }
+}
