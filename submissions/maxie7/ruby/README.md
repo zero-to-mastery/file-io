@@ -15,3 +15,4 @@ ruby spotify_data_logger.rb
 ```
 
 3. Get the results
+![image](https://github.com/maxie7/file-io/assets/15796607/b366f976-c223-4141-9ae1-aa5380aaae16)
