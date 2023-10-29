@@ -1,16 +1,44 @@
 import pandas as pd
 
-# Read the data from csv file
-use_cols = ['track_name', 'artist(s)_name', 'key']
-df = pd.read_csv('spotify-2023.csv', usecols=use_cols)
 
-# Count the values
-songs_qty = df.count('rows')['track_name']
-e_qty = df['key'].value_counts()['E']
+class CsvCounter:
+    """Calculations in .csv file."""
 
-# Log the results to the console
-print(f'There are {songs_qty} songs in this list.')
-print(f'There are {e_qty} songs in the key of E.')
-for artist, qty in df['artist(s)_name'].value_counts(ascending=False).items():
-    print(f'The most popular artist is {artist} with {qty} songs.')
-    break
+    def __init__(self, filepath):
+        self.df = pd.read_csv(filepath)
+
+    def count_length(self, column_name: str = None) -> int:
+        """Return quantity of rows in a column or in whole dataframe."""
+
+        if column_name:
+            column_data = self.df.loc[:, column_name]
+            return len(column_data)
+
+        return len(self.df)
+
+    def count_value_frequency(self, column_name: str, value: str) -> int:
+        """Return number of occurrences of the value in the column."""
+
+        column_data = self.df.loc[:, column_name]
+
+        return column_data.value_counts()[value]
+
+    def get_most_frequent_value(self, column_name: str) -> tuple:
+        """Return the most frequent value in the column."""
+
+        column_data = self.df.loc[:, column_name]
+
+        all_counts = column_data.value_counts(ascending=False)
+        max_value = all_counts.index[0]
+        max_value_count = all_counts.iloc[0]
+
+        return max_value, max_value_count
+
+
+counter = CsvCounter('spotify-2023.csv')
+artist, qty = counter.get_most_frequent_value('artist(s)_name')
+
+print(f'There are {counter.count_length("track_name")} songs in this list.')
+print(f'There are {counter.count_value_frequency("key", "E")} songs '
+      f'in the key of E.')
+print(f'The most popular artist is {artist} with {qty} songs.')
