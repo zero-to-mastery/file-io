@@ -1,0 +1,14 @@
+{
+  "name": "File-io-spotify-parser",
+  "version": "1.0.0",
+  "description": "Create a data processing file I/O script that reads data from a CSV file containing Spotify data and performs some analysi",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suparna",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
