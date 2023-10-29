@@ -3235,11 +3235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Atif_\\Desktop\\atif-dev\\HacktoberFest-2023_C#\\HacktoberFest-2023_C#.csproj",
+      "projectUniqueName": "C:\\Users\\Atif_\\Desktop\\New folder (8)\\file-io\\submissions\\atif-dev\\HacktoberFest-2023_C#\\HacktoberFest-2023_C#.csproj",
       "projectName": "HacktoberFest-2023_C#",
-      "projectPath": "C:\\Users\\Atif_\\Desktop\\atif-dev\\HacktoberFest-2023_C#\\HacktoberFest-2023_C#.csproj",
+      "projectPath": "C:\\Users\\Atif_\\Desktop\\New folder (8)\\file-io\\submissions\\atif-dev\\HacktoberFest-2023_C#\\HacktoberFest-2023_C#.csproj",
       "packagesPath": "C:\\Users\\Atif_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Atif_\\Desktop\\atif-dev\\HacktoberFest-2023_C#\\obj\\",
+      "outputPath": "C:\\Users\\Atif_\\Desktop\\New folder (8)\\file-io\\submissions\\atif-dev\\HacktoberFest-2023_C#\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Atif_\\AppData\\Roaming\\NuGet\\NuGet.Config",

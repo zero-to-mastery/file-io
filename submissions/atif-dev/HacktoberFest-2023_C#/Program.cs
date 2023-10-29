@@ -29,6 +29,27 @@ class Program
         Console.WriteLine($"Total Songs: {totalSongs}");
         Console.WriteLine($"*******************************************************");
 
+        /*******************************************Total Songs in Key of E**************************/
+
+        int rowB;
+        int countESong = 0;
+        string toFind = "E";
+        for (rowB = 1; rowB <= worksheet.UsedRangeRowMax; rowB++)
+        {
+
+            Cell cell = worksheet.Cell(rowB, 15);
+            if (cell.Value != null)
+            {
+                string cellValue = (string)cell.Value;
+                if (string.Equals(cellValue, toFind, StringComparison.OrdinalIgnoreCase))
+                {
+                    countESong++;
+                }
+            }
+        }
+        Console.WriteLine($"Total Songs in Key of E: {countESong}");
+        Console.WriteLine($"*******************************************************");
+
         document.Close();
 
         Console.WriteLine("Press any key to exit.");
