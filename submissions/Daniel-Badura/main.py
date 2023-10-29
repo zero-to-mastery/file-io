@@ -89,12 +89,16 @@ def challenge_one():
     if song_count == -404:
         output_text_challenge_one.delete(1.0, "end")
         output_text_challenge_one.insert("end", "CSV file not found.")
+        print("CSV file not found.")
     elif song_count == -400:
         output_text_challenge_one.delete(1.0, "end")
         output_text_challenge_one.insert("end", "Something went wrong.")
+        print("Something went wrong.")
     else:
         output_text_challenge_one.delete(1.0, "end")
-        output_text_challenge_one.insert("end", f"Number of songs: {song_count}")
+        output_text = f"Number of songs: {song_count}"
+        output_text_challenge_one.insert("end", output_text)
+        print(output_text)
 
 
 def challenge_two():
@@ -102,9 +106,11 @@ def challenge_two():
     key_value = key_value_entry_challenge_two.get()
     songs_in_key = count_songs_key(csv_path, column_name, key_value)
     output_text_challenge_two.delete(1.0, "end")
+    output_text = f"Number of songs with the value of {key_value} in the {column_name} column: {songs_in_key}"
+    print(output_text)
     output_text_challenge_two.insert(
         "end",
-        f"Number of songs with the value of {key_value} in the {column_name} column: {songs_in_key}",
+        output_text,
     )
 
 
@@ -114,14 +120,13 @@ def challenge_three():
     output_text_challenge_three.delete(1.0, "end")
     if result:
         most_common_value, most_common_count = result
-        output_text_challenge_three.insert(
-            "end",
-            f"The most common value in the specified column is '{most_common_value}' with {most_common_count} occurrences.",
-        )
+        output_text = f"The most common value in the specified column is '{most_common_value}' with {most_common_count} occurrences."
+        output_text_challenge_three.insert("end", output_text)
+        print(output_text)
     else:
-        output_text_challenge_three.insert(
-            "end", "An error occurred. Please check the CSV file and column name."
-        )
+        output_text = "An error occurred. Please check the CSV file and column name."
+        output_text_challenge_three.insert("end", output_text)
+        print(output_text)
 
 
 challenge_one_button = tk.Button(window, text="Challenge One", command=challenge_one)
@@ -134,5 +139,9 @@ challenge_three_button = tk.Button(
     window, text="Challenge Three", command=challenge_three
 )
 challenge_three_button.grid(row=2, column=4, padx=10, pady=10)
+
+challenge_one()
+challenge_two()
+challenge_three()
 
 window.mainloop()
