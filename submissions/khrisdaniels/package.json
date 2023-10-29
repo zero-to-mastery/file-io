@@ -1,0 +1,11 @@
+{
+  "name": "khrisdaniels-io",
+  "author": "khrisdaniels",
+  "version": "1.0.0",
+  "description": "Spotify CSV Parser using Papaparse",
+  "main": "script.js",
+  "license": "ISC",
+  "dependencies": {
+    "papaparse": "^5.4.1"
+  }
+}

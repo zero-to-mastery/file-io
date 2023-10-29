@@ -65,6 +65,10 @@ fabric.properties
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/inspectionProfiles/profiles_settings.xml
+/.idea/recipe-app-api.iml
 /.idea/vcs.xml
+/.idea/form-submission-api.iml
 /.idea/inspectionProfiles/Project_Default.xml
+/app/schema.yml
+
 /.idea/rivka-levit.iml
