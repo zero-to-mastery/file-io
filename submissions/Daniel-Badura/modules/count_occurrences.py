@@ -1,9 +1,9 @@
 import csv
 
 
-def count_occurances(csv_file, column_name):
+def count_occurrences(csv_file, column_name):
     try:
-        with open(csv_file, 'r', newline='', encoding='utf-8') as file:
+        with open(csv_file, "r", newline="", encoding="utf-8") as file:
             csv_reader = csv.reader(file)
             header_row = next(csv_reader)
 
@@ -15,14 +15,12 @@ def count_occurances(csv_file, column_name):
             occurrences = {}
 
             for row in csv_reader:
-
                 if column_index < len(row):
                     value = row[column_index]
                     if value not in occurrences:
                         occurrences[value] = 1
                     else:
                         occurrences[value] += 1
-
 
             most_common_value = max(occurrences, key=occurrences.get)
             most_common_count = occurrences[most_common_value]
