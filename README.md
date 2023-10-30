@@ -2,7 +2,7 @@
 
 Create a data processing file I/O script that reads data from a CSV file containing Spotify data and performs some analysis to complete one or more of the challenges outlined below. 
 
-The project is flexible enough to work with nearly any backend programming language. This README provides an overview of the project and explains how to adapt it to your chosen programming language.
+The project is flexible enough to work with nearly any backend programming language. This README overviews the project and explains how to adapt it to your chosen programming language.
 
 ## Table of Contents
 - [Project Overview](#overview)
@@ -11,27 +11,27 @@ The project is flexible enough to work with nearly any backend programming langu
 - [License](#license)
 
 <h2 id="overview">Project Overview</h2>
-The project consists of a script that reads data from a CSV file (spotify-2023.csv) and performs the following tasks.
+The project consists of a script that reads data from a CSV file (Spotify-2023.csv) and performs the following tasks.
 
 1. Load Spotify data from the CSV file.
-2. Create a folder for your project with your github handle. 
+2. Create a folder for your project with your GitHub handle. 
 3. Complete at least one of the challenges below.
 4. Add your folder with your project to the submissions folder of this repo.
 5. Include the script that runs your file.
 
-**Note: the project must successfully complete one of the challenges below to qualify for as a submission.**
+**Note: The project must complete one of the challenges below to qualify for a submission.**
 
 ### Challenges
 1. Write a script to identify the number of songs in the file.
-2. Write a script that identify the number of songs in the key of E.
+2. Write a script identifying the number of songs in the E key.
 3. Count the occurrences of values in a specified column (e.g., artist names) and determine the most common value.
 
 <h2 id="prerequisites">Prerequisites</h2>
 Before adapting this project to your chosen programming language, ensure that you have the following prerequisites:
 
-- Backend programming language of your choice.
+- The backend programming language of your choice.
 - A library or method for reading and parsing CSV files, if not built-in to your language of choice.
-- The CSV file (spotify-2023.csv) containing Spotify data that you want to analyze. Make sure to adjust the filename and path as needed.
+- The CSV file (Spotify-2023.csv) containing Spotify data that you want to analyze. Make sure to adjust the filename and path as needed.
 - The script that will run your file to output the results.
 
 **Note: Projects that include frameworks will not be accepted. Your project must be a script that can be executed from the command line.**
