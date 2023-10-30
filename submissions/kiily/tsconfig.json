@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "ES2021",
+		"strict": true,
+        "module": "NodeNext",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"outDir": "./dist",
+        "moduleResolution": "nodenext"
+	},
+    "files": ["./index.ts"],
+	"exclude": ["node_modules"]
+}

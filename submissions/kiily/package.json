@@ -1,0 +1,21 @@
+{
+	"name": "file-io",
+	"version": "1.0.0",
+	"description": "kiily's submission for file-io hacktoberfest",
+	"main": "index.js",
+	"scripts": {
+		"start": "node dist/index.js",
+		"build": "tsc",
+		"run": "npm run build && npm start",
+		"test": "test"
+	},
+	"author": "kiily",
+	"license": "ISC",
+	"dependencies": {
+		"csv-parser": "^3.0.0",
+		"typescript": "^5.2.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.8.7"
+	}
+}
