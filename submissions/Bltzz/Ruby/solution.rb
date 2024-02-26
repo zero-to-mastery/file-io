@@ -172,7 +172,7 @@ class DataObject
   # Init
   if ARGV.empty?
     puts "For [Solution 3], please provide the column name as command line arg."
-    puts "pussible values: track_name, artist(s)_name, artist_count, released_year, released_month, released_day,
+    puts "possible values: track_name, artist(s)_name, artist_count, released_year, released_month, released_day,
     in_spotify_playlists, in_spotify_charts, streams, in_apple_playlists, in_apple_charts,
     in_deezer_playlists, in_deezer_charts, in_shazam_charts, bpm, key, mode,
     danceability_%, valence_%, energy_%, acousticness_%,
