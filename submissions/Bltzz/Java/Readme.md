@@ -4,7 +4,7 @@ The implementation is a Maven Project, with an automated build.
 
 ### Build
 ```cmd
-cd /path/to/file-io/submissions/Bltzz
+cd /path/to/file-io/submissions/Bltzz/Java
 mvn clean install
 
 move target\Analyzer-jar-with-dependencies.jar Analyzer.jar
