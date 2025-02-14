@@ -39,6 +39,7 @@ Before adapting this project to your chosen programming language, ensure that yo
 <h2 id="getting-started">Getting Started</h2>
 The usage instructions will vary depending on your chosen programming language. Below are the general steps to adapt this project:
 
+
 **Clone or Download:** Clone or download this repository to your local machine.
 
 **Choose Your Backend Language:** Open the project directory. In the submissions folder, create a new script or file in your chosen backend programming language.
